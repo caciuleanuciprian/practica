@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -16,7 +17,8 @@ body{
     width: 100vw;
     height: 100vh;
     background: radial-gradient(circle, rgba(135,70,255,1) 0%, rgba(255,80,80,1) 100%);
-    opacity: 0.7;
+    opacity: 0.5;
+    filter: blur(250px);
 }
 
 .container{
@@ -34,19 +36,46 @@ body{
 }
 
 .container h3{
+    transform: translateY(-450%);
     font-size: 24px;
+    font-family: 'Staatliches', cursive;
+    color: whitesmoke;
+    letter-spacing: 5px;
+    animation: textanimation normal 5s;
+    animation: textanimation2 infinite 2s;
 }
 
 .container img#img2{
-    transform: translateY(-90%);
+    transform: translateY(-80%);
 }
 
 .container img#img1{
-    animation: animation1 normal 2s;
+    animation: animation1 normal 3s;
 }
 
 .container img#img2{
     animation: animation2 normal 2.5s;
+}
+
+@keyframes textanimation2 {
+    0%{
+        opacity: 0.2;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0.2;
+    }
+}
+
+@keyframes textanimation{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 @keyframes animation1{
@@ -67,6 +96,6 @@ body{
     }
     100%{
         opacity: 1;
-        transform: translateY(-90%);
+        transform: translateY(-80%);
     }
 }
