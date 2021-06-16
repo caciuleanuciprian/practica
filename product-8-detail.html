@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Double Bracelet - MESSI</title>
+
+    <link rel="stylesheet" href="./css/product-detail.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="header">
+
+        <!-- Navigation Section -->
+
+        <nav>
+            <ul>
+                <a href="./index.html" id="logo"><img src="./src/images/fcbarcelonalogo.png" id="logo"></a>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./news.html">News</a></li>
+                <li><a href="./products.html">Shop</a></li>
+                <li><a href="./aboutus.html">About Us</a></li>
+                <li><a href="./feedback.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <img src="src/images/double-bracelet-messi.jpg" width="100%" id="ProductImg">
+            </div>
+
+            <div class="col">
+                <p>Products / Accessory</p>
+                <h1>Double Bracelet - MESSI</h1>
+                <h4>$50.00</h4>
+                <select>
+                    <option>Available size</option>
+                    <option>One size</option>
+                </select>
+                <div class="product-detail">
+                    <h3>Product Details</h3>
+                    <p1>FC Barcelona double silicone bracelet with Messi’s name and printed with number 10. Elastic bracelet made using hypoallergenic and antibacterial materials. Colour: black and sky blue.</p1>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var ProductImg = document.getElementById("ProductImg");
+    var SmallImg = document.getElementsByClassName("small-img");
+    SmallImg[0].onclick = function () {
+        ProductImg.src = SmallImg[0].src;
+    }
+    SmallImg[1].onclick = function () {
+        ProductImg.src = SmallImg[1].src;
+    }
+    SmallImg[2].onclick = function () {
+        ProductImg.src = SmallImg[2].src;
+    }
+    SmallImg[3].onclick = function () {
+        ProductImg.src = SmallImg[3].src;
+    }
+    SmallImg[4].onclick = function () {
+        ProductImg.src = SmallImg[4].src;
+    }
+</script>
+
+</html>

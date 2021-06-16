@@ -83,10 +83,6 @@ nav ul li a{
 
 /*Header section*/
 
-.header{
-  
-}
-
 .header-main {
 margin: 100px auto 30px;
 }
@@ -156,10 +152,6 @@ select:focus{
     align-items: center;
 }
 
-.col-2-items{
-    display: flex;
-}
-
 .col-2{
     flex-basis: 25%;
     padding: 15px;
@@ -178,29 +170,4 @@ select:focus{
 
 .col-2:hover{
     transform: translateY(-5px);
-}
-
-
-.single-product{
-    margin-top: 80px;
-}
-
-.single-product .col-2 img{
-    padding: 20px;
-}
-
-.single-product h4{
-    margin: 20px 0;
-    font-size: 22px;
-    font-weight: bold;
-}
-
-.small-img-row{
-    display: flex;
-    justify-content: space-between;
-}
-
-.small-img-col{
-    flex-basis: 30%;
-    cursor: pointer;
 }

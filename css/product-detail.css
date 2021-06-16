@@ -15,6 +15,10 @@ a{
     color: #555;
 }
 
+p{
+    color: #555;
+}
+
 /* Navigation Section */
 
 nav{
@@ -81,44 +85,69 @@ nav ul li a{
     letter-spacing: 3px;
 }
 
-/*Header section*/
-
-.header{
-  
-}
-
-.header-main {
-margin: 100px auto 30px;
-}
-
-.container{
-    margin: 30px 30px;
-    display: flex;
-    }
-
-.row-1{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 20px 20px;
-}
-
-.row-2{
-    display: flex;
-   
+.container {
+    max-width: 80%;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 75px;
+    margin-left: 150px;
+    margin-right: 150px;
 }
 
 .row{
-    position: fixed;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 70px;
 }
-.row-3{
-    margin-bottom: 30px;
+
+.col{
+    flex-basis: 50%;
+    min-width: 100px;
+}
+
+.col img{
+    max-width: 60%;
+    padding: 0px 0;
+}
+
+.col h1{
+    font-size: 35px;
+    line-height: 40px;
+    margin-top: 25px;
+}
+
+.col h4{
+    margin-top: 25px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.col p{
+    color: #555;
+    margin-top: 25px;
+}
+
+.col p1{
+    color: #555;
+}
+
+.small-img-row{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.small-img-col{
+    flex-basis: 30%;
+    cursor: pointer;
 }
 
 select{
     border: 1px solid #ff523b;
     padding: 5px;
-    margin-bottom: 20px;
+    margin-top: 25px;
     margin-right: 50px;
 }
 
@@ -126,51 +155,6 @@ select:focus{
     outline: none;
 }
 
-.col-1-categories{
-    margin-left: 20px;
-    margin-right: 40px;
-    
-
-}
-
-.col-1-categories span{
-    display: list-item;
-    list-style-type: none; 
-    border: 1px solid #ff523b;
-    margin-bottom: 30px;
-    width: 100px;
-    height: 40px;
-    text-align: center;
-    line-height: 40px;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.col-1-categories span:hover{
-    background: #ff523b;
-    color: #fff;
-}
-
-.col-2-items{
-    display: inline-flex;
-}
-
-.col-2{
-    flex-basis: 25%;
-    padding: 15px;
-    min-width: 200px;
-    margin-bottom: 50px;
-    transition: transform 0.5s;
-}
-
-.col-2 img{
-    width: 100%;
-}
-
-.col-2 p{
-    font-size: 14px;
-}
-
-.col-2:hover{
-    transform: translateY(-5px);
+.product-detail{
+    margin-top: 25px;;
 }
