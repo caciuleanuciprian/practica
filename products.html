@@ -8,6 +8,7 @@
     <title>Shop</title>
     <link rel="stylesheet" href="./css/products.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -68,8 +69,8 @@
                     </div>
                     <div class="col-2">
                         <a href="./product-2-detail.html">
-                        <img src="src/images/shirt-away-messi.jpg">
-                    </a>
+                            <img src="src/images/shirt-away-messi.jpg">
+                        </a>
                         <h4><a href="./product-2-detail.html">20/21 La Liga Away Match Shirt - MESSI</a></h4>
                         <div class="rating">
                             <i class="fa fa-star"></i>
@@ -83,7 +84,7 @@
 
                     <div class="col-2">
                         <a href="./product-3-detail.html">
-                        <img src="src/images/shirt-printed10-messi.jpg">
+                            <img src="src/images/shirt-printed10-messi.jpg">
                         </a>
                         <h4><a href="./product-3-detail.html">Printed Shirt with number 10 - MESSI</a></h4>
                         <div class="rating">
@@ -102,7 +103,7 @@
                 <div class="col-2-items">
                     <div class="col-2">
                         <a href="./product-4-detail.html">
-                        <img src="src/images/cap-messi.jpg"></a>
+                            <img src="src/images/cap-messi.jpg"></a>
                         <h4><a href="./product-4-detail.html">Cap - MESSI</a></h4>
                         <div class="rating">
                             <i class="fa fa-star"></i>
@@ -115,7 +116,7 @@
                     </div>
                     <div class="col-2">
                         <a href="./product-5-detail.html">
-                        <img src="src/images/cap-printed10-messi.jpg"></a>
+                            <img src="src/images/cap-printed10-messi.jpg"></a>
                         <h4><a href="./product-5-detail.html">Printed Cap with numeber 10 - MESSI</a></h4>
                         <div class="rating">
                             <i class="fa fa-star"></i>
@@ -128,7 +129,7 @@
                     </div>
                     <div class="col-2">
                         <a href="./product-6-detail.html">
-                        <img src="src/images/cap-junior-messi.jpg"></a>
+                            <img src="src/images/cap-junior-messi.jpg"></a>
                         <h4><a href="./product-6-detail.html">Junior Cap - MESSI</a></h4>
                         <div class="rating">
                             <i class="fa fa-star"></i>
@@ -147,7 +148,7 @@
                 <div class="col-2-items">
                     <div class="col-2">
                         <a href="./product-7-detail.html">
-                        <img src="src/images/bottle-messi.jpg"></a>
+                            <img src="src/images/bottle-messi.jpg"></a>
                         <h4><a href="./product-7-detail.html">Bottle - MESSI</a></h4>
                         <div class="rating">
                             <i class="fa fa-star"></i>
@@ -160,7 +161,7 @@
                     </div>
                     <div class="col-2">
                         <a href="./product-8-detail.html">
-                        <img src="src/images/double-bracelet-messi.jpg"></a>
+                            <img src="src/images/double-bracelet-messi.jpg"></a>
                         <h4><a href="./product-8-detail.html">Double Bracelet - MESSI</a></h4>
                         <div class="rating">
                             <i class="fa fa-star"></i>
@@ -173,7 +174,7 @@
                     </div>
                     <div class="col-2">
                         <a href="./product-9-detail.html">
-                        <img src="src/images/keyring-messi.jpg"></a>
+                            <img src="src/images/keyring-messi.jpg"></a>
                         <h4><a href="./product-9-detail.html">Keyring - MESSI</h4></a>
                         <div class="rating">
                             <i class="fa fa-star"></i>
@@ -186,18 +187,32 @@
                     </div>
                 </div>
 
-
-
-
+                <button onclick="topFunction()" id="myBtn" class="btn"><i class="fa fa-arrow-circle-up"
+                        style="font-size:96px;color:rgb(0, 0, 0)"></i></i></button>
             </div>
-
         </div>
-
-
     </div>
 
+    <script>
+        //Get the button:
+        mybutton = document.getElementById("myBtn");
 
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
 
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
 </body>
-
 </html>
