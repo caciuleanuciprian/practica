@@ -1,12 +1,49 @@
+/* Font Imports and Global Specifications */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Staatliches&display=swap');
 *{
     margin: 0px;
     padding: 0px;
 }
 
+/* Scroll Behavious */
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Fade-In Animation and hide Horizontal Overflow */
+
 body{
-    background: linear-gradient(125deg, rgba(255,80,80,1) 0%, rgba(135,70,255,1) 100%);
+    /*background: linear-gradient(125deg, rgba(255,80,80,1) 0%, rgba(135,70,255,1) 100%);*/
+    background: whitesmoke;
     overflow-x: hidden;
+    animation: fadein 2s normal;
+    box-sizing: border-box;
+    
+}
+
+@keyframes fadein {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/* Custom Scroll Bar */
+
+body::-webkit-scrollbar{
+    width: .2em;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 20px whitesmoke;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #ff4747;
 }
 
 /* Navigation Section */
@@ -32,7 +69,7 @@ nav ul a{
 
 nav ul a:hover{
     color: black;
-    border-bottom: 2px red solid;
+    border-bottom: 2px #ff4747 solid;
     background: whitesmoke;
     transition: ease-in-out 0.3s;
 }
@@ -73,7 +110,7 @@ nav ul li a{
     letter-spacing: 3px;
 }
 
-/* Main Section */
+/* Main Content Section */
 
 .main{
     width: 100vw;
@@ -99,7 +136,7 @@ nav ul li a{
     height: 100%;
     position: relative;
     z-index: 3;
-    background-image: url(/src/images/mainimgmessi.jpg);
+    background-image: url(/src/images/mainimgmessi.png);
     background-position: top;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -155,12 +192,278 @@ nav ul li a{
     transition: ease-in-out 0.3s;
     color: black;
     background: whitesmoke;
-    border-bottom: 2px red solid;
+    border-bottom: 2px #ff4747 solid;
 }
+
+/* History/Timeline Section */
+/* Daca se strica e RIP */
+
+.history{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #050216;
+}
+
+.history .historyoverlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(/src/images/smokebetter.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.3;
+    filter: blur(10px);
+}
+
+.history .absolutetext{
+    display: relative;
+    position: absolute;
+    max-width: 1200px;
+    max-height: 400px;
+    color: whitesmoke;
+}
+
+.history .absolutetext h1{
+    font-size: 192px;
+    transform: rotate(90deg);
+}
+
+.history .absolutetext h1#brief{
+    transform: rotate(270deg);
+    position: absolute;
+    right: 75%;
+    top: -20%;
+}
+
+.history .absolutetext h1#dummy{
+    transform: rotate(90deg);
+    visibility: hidden;
+}
+
+.history .absolutetext h1#history{
+    position: absolute;
+    left: 58.5%;
+    top: 0%;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+  
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: whitesmoke;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+  
+.container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+    min-width: 400px;
+}
+  
+.container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #ff4747;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+  
+.left {
+    left: -50.3%;
+}
+  
+.right {
+    left: 50%;
+}
+  
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+  
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+  
+.right::after {
+    left: -16px;
+}
+  
+.content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+}
+
+.content h2{
+    color: #ff4747;
+    font-family: 'Poppins', sans-serif;
+}
+
+.content p{
+    font-family: 'Poppins', sans-serif;
+}
+  
+/* media queries for timeline
+  
+@media screen and (max-width: 600px) {
+    .timeline::after {
+      left: 31px;
+}
+  
+.container {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+}
+  
+.container::before {
+      left: 60px;
+      border: medium solid white;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent white transparent transparent;
+}
+  
+.left::after, .right::after {
+      left: 15px;
+}
+  
+.right {
+      left: 0%;
+    }
+}
+  
+*/
+
+/* Events Section */
+
+.events{
+    width: 100vw;
+    height: 50vh;
+}
+
+.events .eventsoverlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    background: black;
+    opacity: 0.8;
+}
+
+.events .eventscontainer{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: url(/src/images/stadiumbetter.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    flex-direction: column;
+}
+
+.events .eventscontainer h1{
+    z-index: 3;
+    color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+/* Date Container */
+
+.date-container{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    z-index: 3;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+/* Days / Minutes / Hours / Seconds */
+
+.date-container .days-container, .minutes-container, .hours-container, .seconds-container{
+    margin: 10px 50px;
+    font-size: 72px;
+}
+
+.date-container .days-container p, .minutes-container p, .hours-container p, .seconds-container p{
+    font-size: 36px;
+}
+
+button#tickets{
+    position: absolute;
+    bottom: 10%;
+    background: transparent;
+    letter-spacing: 2px;
+    font-size: 24px;
+    padding: 5px 5px;
+    border: transparent;
+}
+
+button#tickets a{
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 5px;
+    border: 1px solid whitesmoke;
+
+}
+
+button#tickets a:hover{
+    transition: ease-in-out 0.3s;
+    color: black;
+    background: whitesmoke;
+    border-bottom: 2px #ff4747 solid;
+}
+
+/* Footer Section */
 
 footer{
     width: 100vw;
-    height: 300px;
+    height: 30vh;
     background: black;
 }
 
