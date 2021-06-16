@@ -68,7 +68,7 @@ nav ul a{
 }
 
 nav ul a:hover{
-    color: black;
+    color: #ff4747;
     border-bottom: 2px #ff4747 solid;
     background: whitesmoke;
     transition: ease-in-out 0.3s;
@@ -142,6 +142,14 @@ nav ul li a{
     background-size: 100%;
 }
 
+.main .mainimage h3 span{
+    color: #ff4747;
+}
+
+.main .mainimage h4 span{
+    color: #ff4747;
+}
+
 .main .mainimage img{
     display: block;
     height: 100%;
@@ -186,13 +194,16 @@ nav ul li a{
     text-decoration: none;
     color: whitesmoke;
     padding: 5px;
+    font-weight: 300;
+
 }
 
 .main .mainimage button#btn a:hover{
     transition: ease-in-out 0.3s;
-    color: black;
+    color: #ff4747;
     background: whitesmoke;
     border-bottom: 2px #ff4747 solid;
+    font-weight: 700;
 }
 
 /* History/Timeline Section */
@@ -435,6 +446,7 @@ nav ul li a{
 }
 
 button#tickets{
+    font-weight: 700;
     position: absolute;
     bottom: 10%;
     background: transparent;
@@ -454,7 +466,7 @@ button#tickets a{
 
 button#tickets a:hover{
     transition: ease-in-out 0.3s;
-    color: black;
+    color: #ff4747;
     background: whitesmoke;
     border-bottom: 2px #ff4747 solid;
 }
@@ -463,10 +475,93 @@ button#tickets a:hover{
 
 footer{
     width: 100vw;
-    height: 30vh;
+    height: 15vh;
     background: black;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
 }
 
-footer h3{
+footer .leftcolumn{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+footer .middlecolumn{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 2;
+
+}
+
+footer .rightcolumn{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    z-index: 2;
+
+}
+
+footer .leftcolumn h3{
     color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+footer .rightcolumn i{
+    color: whitesmoke;
+    font-size: 24px;
+    margin: 0px 30px 0px 30px;
+}
+
+footer .middlecolumn h4{
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    opacity: 0.3;
+    color: #ff4747;
+}
+
+footer .leftcolumn img{
+    max-width: 170px;
+    max-height: 170px;
+    filter: grayscale(100%);
+}
+
+footer .rightcolumn i:hover{
+    opacity: 1;
+    transition: ease-in-out 0.3s;
+    transform: scale(1.3);
+    color: #ff4747;
+}
+
+footer .leftcolumn img:hover{
+    filter: grayscale(0%);
+    transition: ease-in-out 0.5s;
+    transform: scale(1.1);
+}
+
+footer .middlecolumn h4 span{
+    color: whitesmoke;
+}
+
+footer .footerbg{
+    position: absolute;
+    display: block;
+    z-index: 1;
+    background: url(/src/images/redbluebg.jpg);
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    filter: blur(5px);
 }
