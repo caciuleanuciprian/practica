@@ -171,3 +171,28 @@ select:focus{
 .col-2:hover{
     transform: translateY(-5px);
 }
+
+
+.single-product{
+    margin-top: 80px;
+}
+
+.single-product .col-2 img{
+    padding: 20px;
+}
+
+.single-product h4{
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.small-img-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col{
+    flex-basis: 30%;
+    cursor: pointer;
+}
