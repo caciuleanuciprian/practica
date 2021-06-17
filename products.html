@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/products.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="#" />
 </head>
 
 <body>
@@ -26,196 +27,176 @@
                 <li><a href="./feedback.html">Contact</a></li>
             </ul>
         </nav>
-
-        <div class="header-main">
-            <div class="row-1">
-                <h2>All Products</h2>
-                <select>
-                    <option>Default sorting</option>
-                    <option>Sort by price</option>
-                    <option>Sort by popularity</option>
-                    <option>Sort by rating</option>
-                    <option>Sort by sale</option>
-                </select>
-            </div>
-        </div>
     </div>
 
     <div class="container">
-        <div class="row-2">
-            <div class="col-1-categories" id="scroll">
-                <a href="#shirts"><span>Shirts</span></a>
-                <a href="#caps"><span>Caps</span></a>
-                <a href="#accessory"><span>Accessory</span></a>
+        <div class="small-container">
+            <p>Shop</p>
+        </div>
+
+        <div class="small-container">
+            <hr>
+            <div class="row">
+                <p1>Sort items by: </p1>
+                <button id="sort-default" class="sortBtn">Default</button>
+                <button id="sort-asc" class="sortBtn">Price asc</button>
+                <button id="sort-desc" class="sortBtn">Price desc</button>
             </div>
-            <div class="col-1-items">
-                <div class="row-3" id="shirts">
-                    <br>
-                    <h2>Shirts</h2>
-                </div>
-                <div class="col-2-items">
-                    <div class="col-2">
-                        <a href="./product-1-detail.html">
-                            <img src="src/images/shirt-home-messi.jpg" width="220px">
-                        </a>
-                        <h4><a href="./product-1-detail.html">20/21 La Liga Home Match Shirt - MESSI</a></h4>
-                        <div class="rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-o"></i>
-                        </div>
-                        <p>$50.00</p>
-                    </div>
-                    <div class="col-2">
-                        <a href="./product-2-detail.html">
-                            <img src="src/images/shirt-away-messi.jpg">
-                        </a>
-                        <h4><a href="./product-2-detail.html">20/21 La Liga Away Match Shirt - MESSI</a></h4>
-                        <div class="rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-o"></i>
-                        </div>
-                        <p>$50.00</p>
-                    </div>
+            <hr>
+        </div>
 
-                    <div class="col-2">
-                        <a href="./product-3-detail.html">
-                            <img src="src/images/shirt-printed10-messi.jpg">
-                        </a>
-                        <h4><a href="./product-3-detail.html">Printed Shirt with number 10 - MESSI</a></h4>
-                        <div class="rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-o"></i>
-                        </div>
-                        <p>$50.00</p>
-                    </div>
-                </div>
-                <div class="row-3" id="caps">
-                    <br>
-                    <h2>Caps</h2>
-                </div>
-                <div class="col-2-items">
-                    <div class="col-2">
-                        <a href="./product-4-detail.html">
-                            <img src="src/images/cap-messi.jpg"></a>
-                        <h4><a href="./product-4-detail.html">Cap - MESSI</a></h4>
-                        <div class="rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-o"></i>
-                        </div>
-                        <p>$50.00</p>
-                    </div>
-                    <div class="col-2">
-                        <a href="./product-5-detail.html">
-                            <img src="src/images/cap-printed10-messi.jpg"></a>
-                        <h4><a href="./product-5-detail.html">Printed Cap with numeber 10 - MESSI</a></h4>
-                        <div class="rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-o"></i>
-                        </div>
-                        <p>$50.00</p>
-                    </div>
-                    <div class="col-2">
-                        <a href="./product-6-detail.html">
-                            <img src="src/images/cap-junior-messi.jpg"></a>
-                        <h4><a href="./product-6-detail.html">Junior Cap - MESSI</a></h4>
-                        <div class="rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-o"></i>
-                        </div>
-                        <p>$50.00</p>
-                    </div>
-                </div>
-                <div class="row-3" id="accessory">
-                    <br>
-                    <h2>Accessory</h2>
-                </div>
+        <div class="small-container">
+            <hr>
+            <div class="row">
+                <p1>Category: </p1>
+                <nav1>
+                <span data-filter="all">All products</span>
+                <span data-filter="shirt">Shirts</span>
+                <span data-filter="cap">Caps</span>
+                <span data-filter="accesorry">Accessory</span>
+            <nav1>
+            </div>
+            <hr>
+        </div>
 
-                <div class="col-2-items">
-                    <div class="col-2">
-                        <a href="./product-7-detail.html">
-                            <img src="src/images/bottle-messi.jpg"></a>
-                        <h4><a href="./product-7-detail.html">Bottle - MESSI</a></h4>
-                        <div class="rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-o"></i>
-                        </div>
-                        <p>$50.00</p>
-                    </div>
-                    <div class="col-2">
-                        <a href="./product-8-detail.html">
-                            <img src="src/images/double-bracelet-messi.jpg"></a>
-                        <h4><a href="./product-8-detail.html">Double Bracelet - MESSI</a></h4>
-                        <div class="rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-o"></i>
-                        </div>
-                        <p>$50.00</p>
-                    </div>
-                    <div class="col-2">
-                        <a href="./product-9-detail.html">
-                            <img src="src/images/keyring-messi.jpg"></a>
-                        <h4><a href="./product-9-detail.html">Keyring - MESSI</h4></a>
-                        <div class="rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-o"></i>
-                        </div>
-                        <p>$50.00</p>
-                    </div>
+        <div class="small-container-items">
+            <div class="item shirt" data-price="50" default-order="1">
+                <a href="./product-1-detail.html">
+                    <img src="src/images/shirt-home-messi.jpg" width="220px">
+                </a>
+                <h4><a href="./product-1-detail.html">20/21 La Liga Home Match Shirt - MESSI</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
                 </div>
+                <p>$50.00</p>
+            </div>
 
-                <button onclick="topFunction()" id="myBtn" class="btn"><i class="fa fa-arrow-circle-up"
-                        style="font-size:96px;color:rgb(0, 0, 0)"></i></i></button>
+            <div class="item shirt" data-price="49" default-order="2">
+                <a href="./product-2-detail.html">
+                    <img src="src/images/shirt-away-messi.jpg">
+                </a>
+                <h4><a href="./product-2-detail.html">20/21 La Liga Away Match Shirt - MESSI</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$49.00</p>
+            </div>
+
+            <div class="item shirt" data-price="54" default-order="3">
+                <a href="./product-3-detail.html">
+                    <img src="src/images/shirt-printed10-messi.jpg">
+                </a>
+                <h4><a href="./product-3-detail.html">Printed Shirt with number 10 - MESSI</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$54.00</p>
+            </div>
+
+            <div class="item cap" data-price="15" default-order="4">
+                <a href="./product-4-detail.html">
+                    <img src="src/images/cap-messi.jpg"></a>
+                <h4><a href="./product-4-detail.html">Cap - MESSI</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$15.00</p>
+            </div>
+
+            <div class="item cap" data-price="25" default-order="5">
+                <a href="./product-5-detail.html">
+                    <img src="src/images/cap-printed10-messi.jpg"></a>
+                <h4><a href="./product-5-detail.html">Printed Cap with numeber 10 - MESSI</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$25.00</p>
+            </div>
+
+            <div class="item cap" data-price="17" default-order="6">
+                <a href="./product-6-detail.html">
+                    <img src="src/images/cap-junior-messi.jpg"></a>
+                <h4><a href="./product-6-detail.html">Junior Cap - MESSI</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$17.00</p>
+            </div>
+
+            <div class="item accesorry" data-price="10" default-order="7">
+                <a href="./product-7-detail.html">
+                    <img src="src/images/bottle-messi.jpg"></a>
+                <h4><a href="./product-7-detail.html">Bottle - MESSI</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$10.00</p>
+            </div>
+
+            <div class="item accesorry" data-price="8" default-order="8">
+                <a href="./product-8-detail.html">
+                    <img src="src/images/double-bracelet-messi.jpg"></a>
+                <h4><a href="./product-8-detail.html">Double Bracelet - MESSI</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$8.00</p>
+            </div>
+
+            <div class="item accesorry" data-price="11" default-order="9">
+                <a href="./product-9-detail.html">
+                    <img src="src/images/keyring-messi.jpg"></a>
+                <h4><a href="./product-9-detail.html">Keyring - MESSI</h4></a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$11.00</p>
             </div>
         </div>
+        <button onclick="topFunction()" id="myBtn" class="btn"><i class="fa fa-arrow-circle-up"
+                style="font-size:96px;color:rgb(0, 0, 0)"></i></i></button>
     </div>
 
-    <script>
-        //Get the button:
-        mybutton = document.getElementById("myBtn");
+    <div class="footer">
 
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function () { scrollFunction() };
+    </div>
 
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
-            }
-        }
-
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-            document.body.scrollTop = 0; // For Safari
-            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-        }
-    </script>
+    <script src="/js/products.js"></script>
 </body>
 </html>

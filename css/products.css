@@ -10,10 +10,10 @@ body{
     font-family: 'Popins',sans-serif;
 }
 
-a{
+/* a{
     text-decoration: none;
     color: #555;
-}
+} */
 
 /* Navigation Section */
 
@@ -81,61 +81,103 @@ nav ul li a{
     letter-spacing: 3px;
 }
 
-/*Header section*/
-
-.header-main {
-margin: 100px auto 30px;
-}
+/*Items section*/
 
 .container{
-    margin: 30px 30px;
-    display: flex;
+    margin: 150px;
     }
 
-.row-1{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 170px 20px 20px 20px;
+.small-container p{
+    font-size: 40px;
+    margin-bottom: 20px;
 }
 
-.row-2{
-    display: flex;
-   
+.small-container hr{
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.row-3{
+.small-container-items{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 45px;
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.small-container-items img{
+    width: 100%;
+    object-fit: contain;
+    flex-basis: 25%;
+    padding: 15px;
+    min-width: 200px;
+    transition: transform 0.5s;
+}
+
+.item{
+    text-align: center;
+    overflow: hidden;
+    
+}
+
+.item h4 {
     text-align: center;
 }
 
-.row-3 br{
-    margin-top: 70px;
+.item p{
+    text-align: center;
+}
+
+.item a{
+    text-decoration: none;
+    color: #555;
+}
+
+.item:hover{
+    transform: translateY(-5px);
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 25px;
+
+}
+
+.sortBtn{
+    border: 2px solid #004d98;
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: white;
+}
+
+.sortBtn:hover {
+    background: #004d98;
+    color: #fff;
 }
 
 select{
-    border: 1px solid #ff523b;
+    border: 1px solid #004d98;
     padding: 5px;
     margin-bottom: 20px;
     margin-right: 50px;
+    float: right;
 }
 
 select:focus{
     outline: none;
 }
 
-.col-1-categories{
-    margin-left: 20px;
-    margin-right: 40px;
-    position: fixed;
-    margin: 131.5px auto;
-
-}
-
-.col-1-categories span{
-    display: list-item;
+span{
+    display: inline;
     list-style-type: none; 
-    border: 1px solid #ff523b;
-    margin-bottom: 30px;
+    border: 1px solid #004d98;
     width: 100px;
     height: 40px;
     text-align: center;
@@ -144,41 +186,15 @@ select:focus{
     text-decoration: none;
 }
 
-.col-1-categories span:hover{
-    background: #ff523b;
+span:hover{
+    background: #004d98;
     color: #fff;
-}
-
-.col-2-items{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.col-2{
-    flex-basis: 25%;
-    padding: 15px;
-    min-width: 200px;
-    margin-bottom: 50px;
-    transition: transform 0.5s;
-}
-
-.col-2 img{
-    width: 100%;
-}
-
-.col-2 p{
-    font-size: 14px;
-}
-
-.col-2:hover{
-    transform: translateY(-5px);
 }
 
 #myBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
+    bottom: 15px; /* Place the button at the bottom of the page */
     right: 30px; /* Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
@@ -193,4 +209,22 @@ select:focus{
   
   #myBtn:hover {
     background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+  .hide{
+      opacity: 1;
+      animation-name: a1;
+      animation-duration: 0.5s;
+      animation-fill-mode: forwards;
+  }
+
+  @keyframes a1{
+      to{
+          opacity: 0;
+          min-height: 0;
+          min-width: 0;
+          padding: 0;
+          margin: 0;
+          border:0;
+      }
   }
