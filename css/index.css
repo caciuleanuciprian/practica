@@ -18,7 +18,7 @@ body{
     /*background: linear-gradient(125deg, rgba(255,80,80,1) 0%, rgba(135,70,255,1) 100%);*/
     background: whitesmoke;
     overflow-x: hidden;
-    animation: fadein 2s normal;
+    animation: fadein 1s normal;
     box-sizing: border-box;
     
 }
