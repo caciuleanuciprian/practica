@@ -8,6 +8,16 @@
 
 body{
     font-family: 'Popins',sans-serif;
+    animation: 1s normal fadein;
+}
+
+@keyframes fadein {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 /* a{
@@ -142,10 +152,12 @@ p2{
 
 .item a:hover{
     color: #004d98;
+    transition: 0.2s ease-in-out;
 }
 
 .item:hover{
-    transform: translateY(-5px);
+    transform: translateY(-10px);
+    transition: 0.3s ease-in-out;
 }
 
 .row{
@@ -175,6 +187,7 @@ p1{
 .sortBtn:hover {
     background: #004d98;
     color: #fff;
+    transition: 0.2s ease-in-out;
 }
 
 .catBtn{
@@ -192,6 +205,8 @@ p1{
 .catBtn:hover {
     background: #a50044;
     color: #fff;
+    transition: 0.2s ease-in-out;
+
 }
 
 i{
@@ -201,29 +216,48 @@ i{
 #myBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
-    bottom: 150px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
+    bottom: 42px; /* Place the button at the bottom of the page */
+    right: 35px; /* Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
-    background-color: rgb(255, 255, 255); /* Set a background color */
-    color: white; /* Text color */
+    background-color: white; /* Set a background color */
     cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
+    padding: 10px; /* Some padding */
     border-radius: 10px; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
+    font-size: 2px; /* Increase font size */
+    transition: 0.3s ease-in-out;
   }
   
-  #myBtn:hover {
-    background: linear-gradient(to right,#004d98 50%, #a50044 50%);
-    opacity: 0.7;
+ button#myBtn i{
+     font-size: 36px;
+     color: black;
+
+ }
+
+  button#myBtn i::before{
+      font-size: 36px;
+      color: black;
+
+  }
+
+  button#myBtn i:hover {
+    transition: 0.2s ease-in-out;
+    background: #004D98;
+    background: -webkit-linear-gradient(to right, #004D98 0%, #A50044 100%);
+    background: -moz-linear-gradient(to right, #004D98 0%, #A50044 100%);
+    background: linear-gradient(to right, #004D98 0%, #A50044 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    transform: scale(1.2);
   }
 
   .hide{
     animation-name: a1;
      /* opacity: 1;
     animation-duration: 0.5s; */
-    animation-fill-mode:forwards;
+    animation-fill-mode: forwards;
   }
 
   @keyframes a1{
