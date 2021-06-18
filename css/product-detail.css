@@ -103,12 +103,13 @@ nav ul li a{
 }
 
 .col{
+    margin-top: 20px;
     flex-basis: 50%;
     min-width: 100px;
 }
 
 .col img{
-    max-width: 60%;
+    max-width: 55%;
     padding: 0px 0;
 }
 

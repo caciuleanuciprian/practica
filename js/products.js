@@ -64,19 +64,19 @@ function insertAfter(elem, refElem) {
     return refElem.parentNode.insertBefore(elem, refElem.nextSibling);
 }
 
-const filterBox = document.querySelectorAll('.item');
+document.querySelector('#all').onclick = function(){filter('all');}
+document.querySelector('#shirt').onclick = function(){ filter('shirt');}
+document.querySelector('#cap').onclick = function(){ filter('cap');}
+document.querySelector('#accessory').onclick = function(){ filter('accessory');}
 
-
-document.querySelector('nav1').addEventListener('click', event => {
-    if (event.target.tagName !== 'SPAN') return false;
-
-    let filterClass = event.target.dataset['filter'];
-
+function filter(typefilter) {
+    console.log(typefilter);
+    const filterBox = document.querySelectorAll('.item');
     filterBox.forEach(elem => {
-    elem.classList.remove('hide');
-    if (!elem.classList.contains(filterClass) && filterClass !== 'all') {
-    elem.classList.add('hide');
-    }
-
+        elem.classList.remove('hide');
+        if (!elem.classList.contains(typefilter) && typefilter !== 'all') {
+            elem.classList.add('hide');
+        }
     });
-});
+}
+

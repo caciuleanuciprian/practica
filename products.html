@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 
 <body>
@@ -49,12 +50,14 @@
             <hr>
             <div class="row">
                 <p1>Category: </p1>
-                <nav1>
-                <span data-filter="all">All products</span>
-                <span data-filter="shirt">Shirts</span>
-                <span data-filter="cap">Caps</span>
-                <span data-filter="accesorry">Accessory</span>
-            <nav1>
+                <div class="row row-1">
+                    <nav1>
+                        <button class="catBtn" id="all">All products</button>
+                        <button class="catBtn" id="shirt">Shirts</button>
+                        <button class="catBtn" id="cap">Caps</button>
+                        <button class="catBtn" id="accessory">Accessory</button>
+                    </nav1>
+                </div>
             </div>
             <hr>
         </div>
@@ -70,9 +73,9 @@
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star"></i>
                 </div>
-                <p>$50.00</p>
+                <p2>$50.00</p2>
             </div>
 
             <div class="item shirt" data-price="49" default-order="2">
@@ -85,9 +88,9 @@
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star"></i>
                 </div>
-                <p>$49.00</p>
+                <p2>$49.00</p2>
             </div>
 
             <div class="item shirt" data-price="54" default-order="3">
@@ -100,9 +103,9 @@
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star"></i>
                 </div>
-                <p>$54.00</p>
+                <p2>$54.00</p2>
             </div>
 
             <div class="item cap" data-price="15" default-order="4">
@@ -114,9 +117,9 @@
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star"></i>
                 </div>
-                <p>$15.00</p>
+                <p2>$15.00</p2>
             </div>
 
             <div class="item cap" data-price="25" default-order="5">
@@ -128,9 +131,9 @@
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star"></i>
                 </div>
-                <p>$25.00</p>
+                <p2>$25.00</p2>
             </div>
 
             <div class="item cap" data-price="17" default-order="6">
@@ -142,12 +145,12 @@
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star"></i>
                 </div>
-                <p>$17.00</p>
+                <p2>$17.00</p2>
             </div>
 
-            <div class="item accesorry" data-price="10" default-order="7">
+            <div class="item accessory" data-price="10" default-order="7">
                 <a href="./product-7-detail.html">
                     <img src="src/images/bottle-messi.jpg"></a>
                 <h4><a href="./product-7-detail.html">Bottle - MESSI</a></h4>
@@ -156,12 +159,12 @@
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star"></i>
                 </div>
-                <p>$10.00</p>
+                <p2>$10.00</p2>
             </div>
 
-            <div class="item accesorry" data-price="8" default-order="8">
+            <div class="item accessory" data-price="8" default-order="8">
                 <a href="./product-8-detail.html">
                     <img src="src/images/double-bracelet-messi.jpg"></a>
                 <h4><a href="./product-8-detail.html">Double Bracelet - MESSI</a></h4>
@@ -170,12 +173,12 @@
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star"></i>
                 </div>
-                <p>$8.00</p>
+                <p2>$8.00</p2>
             </div>
 
-            <div class="item accesorry" data-price="11" default-order="9">
+            <div class="item accessory" data-price="11" default-order="9">
                 <a href="./product-9-detail.html">
                     <img src="src/images/keyring-messi.jpg"></a>
                 <h4><a href="./product-9-detail.html">Keyring - MESSI</h4></a>
@@ -184,19 +187,33 @@
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star"></i>
                 </div>
-                <p>$11.00</p>
+                <p2>$11.00</p2>
             </div>
         </div>
         <button onclick="topFunction()" id="myBtn" class="btn"><i class="fa fa-arrow-circle-up"
                 style="font-size:96px;color:rgb(0, 0, 0)"></i></i></button>
     </div>
 
-    <div class="footer">
-
-    </div>
+    <!-- Footer Section -->
+    <footer>
+        <div class="footerbg"></div>
+        <div class="leftcolumn">
+          <a href="https://www.fcbarcelona.com/en/"><img src="/src/images/fcbarcelonalogobetterfinal.png"></a>
+        </div>
+        <div class="middlecolumn">
+          <h4>All right reserved <span>Caciuleanu Ciprian</span> & <span>Jechiu Alexandrina</span></h4>
+        </div>
+        <div class="rightcolumn">
+          <a href="https://www.facebook.com/leomessi"><i class="fab fa-facebook"></i></a>
+          <a href="https://twitter.com/Ieomessiok"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/leomessi/"><i class="fab fa-instagram"></i></a>
+          <a href="mailto:info@messi.com"><i class="fas fa-envelope"></i></a>
+        </div>
+      </footer>
 
     <script src="/js/products.js"></script>
 </body>
+
 </html>
