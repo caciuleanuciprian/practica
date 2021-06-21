@@ -6,10 +6,13 @@
     padding: 0px;
 }
 
+html{
+    height: 100%;
+}
+
 body{
     font-family: 'Popins',sans-serif;
     animation: 1s normal fadein;
-    min-height: 100%;
     font-size: 18px;
     box-sizing: border-box;
     background-color: #f1f1f1;
@@ -53,7 +56,7 @@ nav ul a{
 }
 
 nav ul a:hover{
-    color: black;
+    color: #ff4747;
     border-bottom: 2px #ff4747 solid;
     background: whitesmoke;
     transition: ease-in-out 0.3s;
@@ -97,9 +100,9 @@ nav ul li a{
 
 .container{
     margin-top: 70px;
-    max-width: 90%;
+    max-width: 100%;
     width: 1400px;
-    height:100%;
+    height: 100%;
     margin-left: auto;
     margin-right: auto;
     display:block;
@@ -111,6 +114,7 @@ nav ul li a{
     background-color: white;
     margin-top: 2%;
     margin-bottom: 2%;
+    min-height: 500px;
 }
 
 .left{
@@ -181,7 +185,7 @@ input[type=text], input[type=email], select, textarea {
     background: black;
     display: flex;
     justify-content: space-between;
-    position: relative;
+    position: absolute;
     
 }
 
@@ -223,7 +227,7 @@ footer .leftcolumn h3{
 
 footer .rightcolumn i{
     color: whitesmoke;
-    font-size: 24px;
+    font-size: 28px;
     margin: 0px 30px 0px 30px;
 }
 
@@ -237,7 +241,6 @@ footer .middlecolumn h4{
 footer .leftcolumn img{
     max-width: 170px;
     max-height: 170px;
-    filter: grayscale(100%);
 }
 
 footer .rightcolumn i:hover{
@@ -248,7 +251,6 @@ footer .rightcolumn i:hover{
 }
 
 footer .leftcolumn img:hover{
-    filter: grayscale(0%);
     transition: ease-in-out 0.5s;
     transform: scale(1.1);
 }
@@ -261,7 +263,7 @@ footer .footerbg{
     position: absolute;
     display: block;
     z-index: 1;
-    background: url(/src/images/redbluebg.jpg);
+    background: black;
     background-size: contain;
     width: 100%;
     height: 100%;

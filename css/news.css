@@ -11,6 +11,7 @@ body{
     animation: 1s normal fadein;
     background: #954141;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 @keyframes fadein {
@@ -298,4 +299,98 @@ hr{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+   /* Footer Section */
+
+   footer{
+    width: 100%;
+    height: 15vh;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    
+}
+
+footer .leftcolumn{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+footer .middlecolumn{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 2;
+
+}
+
+footer .rightcolumn{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    z-index: 2;
+
+}
+
+footer .leftcolumn h3{
+    color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+footer .rightcolumn i{
+    color: whitesmoke;
+    font-size: 28px;
+    margin: 0px 30px 0px 30px;
+}
+
+footer .middlecolumn h4{
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    opacity: 0.3;
+    color: #ff4747;
+}
+
+footer .leftcolumn img{
+    max-width: 170px;
+    max-height: 170px;
+}
+
+footer .rightcolumn i:hover{
+    opacity: 1;
+    transition: ease-in-out 0.3s;
+    transform: scale(1.3);
+    color: #ff4747;
+}
+
+footer .leftcolumn img:hover{
+    transition: ease-in-out 0.5s;
+    transform: scale(1.1);
+}
+
+footer .middlecolumn h4 span{
+    color: whitesmoke;
+}
+
+footer .footerbg{
+    position: absolute;
+    display: block;
+    z-index: 1;
+    background: black;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    filter: blur(5px);
 }

@@ -2,23 +2,23 @@ Title: What they said: The 13 players to play alongside Messi and Ronaldo
 Image: src/images/messi-ronaldo
 Source: https://www.planetfootball.com/quick-reads/what-they-said-the-12-players-to-play-alongside-messi-and-ronaldo/
 
-The longstanding debate of Cristiano Ronaldo versus Lionel Messi has divided football fans for over a decade – but what about the players who know them best?
+The longstanding debate of Cristiano Ronaldo versus Lionel Messi has divided football fans for over a decade – but what about the players who know them best?<br>
 
-The pair are regarded as two of the greatest footballers of all time and they have won 11 of the past 12 Ballon d’Or awards between them.
+The pair are regarded as two of the greatest footballers of all time and they have won 11 of the past 12 Ballon d’Or awards between them.<br>
 
-Here’s a selection of quotes from the few players fortunate enough to have played alongside Messi and Ronaldo, thanks to help from SPORTbible.
+Here’s a selection of quotes from the few players fortunate enough to have played alongside Messi and Ronaldo, thanks to help from SPORTbible.<br>
 
-Gerard Pique 
+Gerard Pique <br>
 
-– “Cristiano is a perfect machine, a hard worker who always wants to improve,” Pique told Voetbal Magazine in 2014. “He is very demanding of himself, something that he showed at United.
+– “Cristiano is a perfect machine, a hard worker who always wants to improve,” Pique told Voetbal Magazine in 2014. “He is very demanding of himself, something that he showed at United.<br>
 
-“Many times conclusions are drawn based on specific actions without actually getting to know him. He has changed in recent years, I know him from United and he took to me well. He helped me a lot in Manchester.”
+“Many times conclusions are drawn based on specific actions without actually getting to know him. He has changed in recent years, I know him from United and he took to me well. He helped me a lot in Manchester.”<br>
 
-– “I always said that Messi has some talent that no one has,” Pique told BT Sport in 2016. “I mean, he has the ball and his speed controlling the ball. The ball doesn’t go two metres far from his foot, it’s always there. It’s impossible to catch him, this talent I didn’t see from anyone.
+– “I always said that Messi has some talent that no one has,” Pique told BT Sport in 2016. “I mean, he has the ball and his speed controlling the ball. The ball doesn’t go two metres far from his foot, it’s always there. It’s impossible to catch him, this talent I didn’t see from anyone.<br>
 
-“But for me it’s like Messi is not human but [Ronaldo] is the best of the humans.”
+“But for me it’s like Messi is not human but [Ronaldo] is the best of the humans.”<br>
 
-Andre Gomes 
+Andre Gomes <br>
 
 – “Ronaldo is a very important player, who is always present and ready to play,” Gomes said in 2016. “He is very serious about the responsibility of leading our country, we have great spirit, and he’s a great example for all of us.”
 
