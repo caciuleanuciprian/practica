@@ -1,0 +1,270 @@
+/* Font Imports and Global Specifications */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Staatliches&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Popins',sans-serif;
+    animation: 1s normal fadein;
+    min-height: 100%;
+    font-size: 18px;
+    box-sizing: border-box;
+    background-color: #f1f1f1;
+}
+
+@keyframes fadein {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/* a{
+    text-decoration: none;
+    color: #555;
+} */
+
+/* Navigation Section */
+
+nav{
+    /* position: relative; */
+    display: flex;
+    width: 100%;
+    height: 70px;
+    z-index: 2;
+    text-align: center;
+    justify-content: center;
+    background: #020105;
+    box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.3);
+    flex-direction: column;
+    position: fixed; 
+    top:0;
+}
+
+nav ul a{
+    width: 100%;
+    height: 100%;
+    padding: 0px 5px;
+}
+
+nav ul a:hover{
+    color: black;
+    border-bottom: 2px #ff4747 solid;
+    background: whitesmoke;
+    transition: ease-in-out 0.3s;
+}
+
+nav ul a img#logo{
+    position: relative;
+    display: block;
+    margin-top: -15px;
+    width: 50px;
+    height: 50px;
+    float: left;
+    padding-left: 50px;
+}
+
+nav ul a#logo:hover{
+    color: whitesmoke;
+    border-bottom: transparent;
+    background: transparent;
+}
+
+nav ul{
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+nav ul li{
+    display: inline-block;
+    text-align: center;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-family: 'Staatliches', cursive;
+    margin: 25px;
+    color: whitesmoke;
+    font-size: 18px;
+    letter-spacing: 3px;
+}
+
+.container{
+    margin-top: 70px;
+    max-width: 90%;
+    width: 1400px;
+    height:100%;
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+}
+
+.col {
+    width: 49%;
+    box-sizing: border-box;
+    background-color: white;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.left{
+    float: left;
+}
+ 
+.right{
+    float: right;
+}
+
+.row-header{
+    border-bottom: 1px solid #eee;
+    padding: 8% 10%;
+    position: relative;
+}
+
+h2{
+    font-size: 2.25em;
+    word-wrap: break-word;
+    font-weight: 700;
+    line-height: 120%;
+    border:0;
+}
+
+.row-content{
+    padding: 10%;
+}
+
+input[type=text], input[type=email], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  .btnSubmit{
+    background-color: #004d98;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  .btnSubmit:hover {
+    background-color: #a50044;
+  }
+
+  .map{
+      padding: 10%;
+      width: auto;
+      
+  }
+
+  /* Footer Section */
+
+  footer{
+    width: 100%;
+    height: 15vh;
+    bottom: 0;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    
+}
+
+footer .leftcolumn{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+footer .middlecolumn{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 2;
+
+}
+
+footer .rightcolumn{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    z-index: 2;
+
+}
+
+footer .leftcolumn h3{
+    color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+footer .rightcolumn i{
+    color: whitesmoke;
+    font-size: 24px;
+    margin: 0px 30px 0px 30px;
+}
+
+footer .middlecolumn h4{
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    opacity: 0.3;
+    color: #ff4747;
+}
+
+footer .leftcolumn img{
+    max-width: 170px;
+    max-height: 170px;
+    filter: grayscale(100%);
+}
+
+footer .rightcolumn i:hover{
+    opacity: 1;
+    transition: ease-in-out 0.3s;
+    transform: scale(1.3);
+    color: #ff4747;
+}
+
+footer .leftcolumn img:hover{
+    filter: grayscale(0%);
+    transition: ease-in-out 0.5s;
+    transform: scale(1.1);
+}
+
+footer .middlecolumn h4 span{
+    color: whitesmoke;
+}
+
+footer .footerbg{
+    position: absolute;
+    display: block;
+    z-index: 1;
+    background: url(/src/images/redbluebg.jpg);
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    filter: blur(5px);
+}

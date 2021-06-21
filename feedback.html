@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="./css/feedback-form.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous"> -->
+</head>
+
+<body>
+    <div class="header">
+
+        <!-- Navigation Section -->
+
+        <nav>
+            <ul>
+                <a href="./index.html" id="logo"><img src="./src/images/fcbarcelonalogo.png" id="logo"></a>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./news.html">News</a></li>
+                <li><a href="./products.html">Shop</a></li>
+                <li><a href="./aboutus.html">About Us</a></li>
+                <li><a href="./feedback.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="left col">
+            <div class="row-header">
+                <h2>Feedback Form</h2>
+                <br>
+                <p>We would love to hear your thoughts, concerns or problem with anything so we can improve!</p>
+            </div>
+            <div class="row-content">
+                <form action="https://getform.io/f/28094cf6-7717-466d-af94-23346d173215" method="POST">
+                    <label class="form-label">Full Name</label>
+                    <br>
+                    <input type="text" name="name" placeholder="Your name..." required="">
+                    <br>
+                    <label class="form-label">Email</label>
+                    <br>
+                    <input type="email" name="email" placeholder="Your email..." required="">
+                    <br>
+                    <label class="form-label">Describe Feedback:</label>
+                    <br>
+                    <textarea rows="4" name="message" id="textinput" placeholder="Your message..."
+                        required=""></textarea>
+                    <br>
+                    <button type="submit" class="btnSubmit">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="right col">
+            <div class="row-header">
+                <h2>Our Location</h2>
+                <br>
+                <p>Meet us here every match day for watching together the magic of Leo Messi</p>
+            </div>
+
+            <div class="row-content map" id="googleMap">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d19889.024562253082!2d-2.60505!3d51.455805!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xafc5b760fbd98053!2sAllstars%20Sports%20Bar!5e0!3m2!1sru!2sus!4v1624286115796!5m2!1sru!2sus"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footerbg"></div>
+        <div class="leftcolumn">
+            <a href="https://www.fcbarcelona.com/en/"><img src="/src/images/fcbarcelonalogobetterfinal.png"></a>
+        </div>
+        <div class="middlecolumn">
+            <h4>All right reserved <span>Caciuleanu Ciprian</span> & <span>Jechiu Alexandrina</span></h4>
+        </div>
+        <div class="rightcolumn">
+            <a href="https://www.facebook.com/leomessi"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/Ieomessiok"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/leomessi/"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:info@messi.com"><i class="fas fa-envelope"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        let inputs = document.querySelectorAll("input");
+        inputs.forEach((input) => (input.value = ""));
+        document.getElementById("textinput").value = "";
+    </script>
+
+</body>  
+
+</html>
