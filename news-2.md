@@ -20,17 +20,17 @@ Gerard Pique <br>
 
 Andre Gomes <br>
 
-– “Ronaldo is a very important player, who is always present and ready to play,” Gomes said in 2016. “He is very serious about the responsibility of leading our country, we have great spirit, and he’s a great example for all of us.”
+– “Ronaldo is a very important player, who is always present and ready to play,” Gomes said in 2016. “He is very serious about the responsibility of leading our country, we have great spirit, and he’s a great example for all of us.”<br>
 
-– “Everyone knows that Messi is very, very good,” Gomes told L’Esportiu de Catalunya in 2016. “He does things in games that you cannot explain; he just knows different things and can do it.
+– “Everyone knows that Messi is very, very good,” Gomes told L’Esportiu de Catalunya in 2016. “He does things in games that you cannot explain; he just knows different things and can do it.<br>
 
-“In training, it is a show, because every day he can invent something new. You think you’re used to it, but there is always one day you go to the dressing room surprised by something he has done.”
+“In training, it is a show, because every day he can invent something new. You think you’re used to it, but there is always one day you go to the dressing room surprised by something he has done.”<br>
 
-Gonzalo Higuain 
+Gonzalo Higuain <br>
 
-– “We had already played together with Real,” Higuain told Fox News on Ronaldo in 2019. “Many years have passed, and I have found another player, a more mature person, with a family.
+– “We had already played together with Real,” Higuain told Fox News on Ronaldo in 2019. “Many years have passed, and I have found another player, a more mature person, with a family.<br>
 
-“I enjoyed playing alongside him before and I am glad that we are back together.”
+“I enjoyed playing alongside him before and I am glad that we are back together.”<br>
 
 – “I’m a forward and I have the chance to play with Messi. It’s a privilege to play alongside him,” Higuain said in 2012.
 

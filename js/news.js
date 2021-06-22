@@ -1,6 +1,7 @@
 const thisWeekNewsBtn1 = document.getElementById("thisweeknews1btn");
 const news1 = document.getElementById("newsoverlay1");
 const news2 = document.getElementById("newsoverlay2");
+const news3 = document.getElementById("newsoverlay3");
 
 console.log(divWhichWeApplyClassChange);
 
@@ -20,4 +21,13 @@ function addClass2(){
 
 function removeClass2(){
     news2.classList.remove("active");
+}
+
+function addClass3(){
+    
+    news3.classList.add("active");
+}
+
+function removeClass3(){
+    news3.classList.remove("active");
 }

@@ -20,6 +20,19 @@ body{
     }
 }
 
+/* Custom Scroll Bar */
+
+body::-webkit-scrollbar{
+    width: .2em;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 20px whitesmoke;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #ff4747;
+}
 
 /* Navigation Section */
 

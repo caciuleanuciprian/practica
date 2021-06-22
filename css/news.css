@@ -125,7 +125,7 @@ hr{
 .thisweek .newscontainer{
     display: flex;
     flex-direction: column;
-    width: 250px;
+    width: 420px;
     min-height: 400px;
     justify-content: center;
     align-items: center;
@@ -135,10 +135,10 @@ hr{
 }
 
 .thisweek .newscontainer img{
+    width: 400px;
+    height: 300px;
     padding: 15px;
-    width: 90%;
-    height: 100%;
-    border-radius: 30px;
+    border-radius: 25px;
 }
 
 .thisweek .newscontainer h2{
@@ -192,7 +192,7 @@ hr{
 .lastweek .newscontainer{
     display: flex;
     flex-direction: column;
-    width: 250px;
+    width: 420px;
     min-height: 400px;
     justify-content: center;
     align-items: center;
@@ -202,10 +202,10 @@ hr{
 }
 
 .lastweek .newscontainer img{
+    width: 400px;
+    height: 300px;
     padding: 15px;
-    width: 90%;
-    height: 100%;
-    border-radius: 30px;
+    border-radius: 25px;
 }
 
 .lastweek .newscontainer h2{
@@ -267,11 +267,16 @@ hr{
 }
 
 .newsoverlay img{
-    padding: 30px;
+    padding: 30px 30px 10px 30px;
+}
+
+.newsoverlay#newsoverlay3 img{
+    width: 700px;
+    height: 368px;
 }
 
 .newsoverlay hr#newshr{
-    margin: 0px;
+    margin: 0px 2px;
     border: 2px solid #fe6363;
 }
 
@@ -281,6 +286,7 @@ hr{
     letter-spacing: 2px;
     font-size: 36px;
     color: whitesmoke;
+    text-align: center;
 }
 
 .newsoverlay p{
@@ -293,12 +299,39 @@ hr{
     justify-content: center;
     display: flex;
     z-index: 2;
-    width: 90vw;
+    width: 80vw;
+    min-height: 50vh;
     background: linear-gradient(235deg, rgba(254,99,99,1) 0%, rgba(135,70,255,1) 100%);
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border-radius: 15px;
+}
+
+.newsoverlay p button{
+    float: right;
+    margin-top: 15px;
+    padding: 10px;
+    background: transparent;
+    border: transparent;
+}
+
+.newsoverlay p button a{
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 10px;
+    border: 2px whitesmoke solid;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 2px;
+}
+
+.newsoverlay p button a:hover{
+    transition: ease-in-out 0.3s;
+    color: #ff4747;
+    background: whitesmoke;
+    border-bottom: 5px #ff4747 solid;
+    border-left: 5px #ff4747 solid;
 }
 
   /* Footer Section */
