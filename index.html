@@ -161,11 +161,34 @@
       <a href="https://twitter.com/Ieomessiok"><i class="fab fa-twitter"></i></a>
       <a href="https://www.instagram.com/leomessi/"><i class="fab fa-instagram"></i></a>
       <a href="mailto:info@messi.com"><i class="fas fa-envelope"></i></a>
+      <i></i><i></i>
+      <i onclick="topFunction()" class="fa fa-chevron-circle-up"></i>
     </div>
   </footer>
 
 
   <script src="./js/countdown.js"></script>
+  <script>
+    // //Get the button:
+    mybutton = document.getElementById("myBtn");
+
+    // // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+  </script>
 
 </body>
 
