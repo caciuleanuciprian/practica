@@ -4,7 +4,7 @@ let CurrentDate = new Date();
 
 // Initialize Christmas Date //
 
-const ChristmasDate = new Date('August 19, 2021 08:00:00')
+const ChristmasDate = new Date('August 15, 2021 20:00:00')
 
 // Update Date every seconds (1000ms) //
 function updateDate(){

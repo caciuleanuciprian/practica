@@ -168,7 +168,7 @@ nav ul li a{
     right: 5%;
     top: 70%;
     z-index: 1;
-    font-size: 28px;
+    font-size: 36px;
 }
 
 .main h4{
@@ -211,7 +211,7 @@ nav ul li a{
 
 .history{
     width: 100vw;
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -238,14 +238,14 @@ nav ul li a{
 }
 
 .history .absolutetext h1{
-    font-size: 192px;
+    font-size: 150px;
     transform: rotate(90deg);
 }
 
 .history .absolutetext h1#brief{
     transform: rotate(270deg);
     position: absolute;
-    right: 75%;
+    right: 73.5%;
     top: -20%;
 }
 
@@ -256,7 +256,7 @@ nav ul li a{
 
 .history .absolutetext h1#history{
     position: absolute;
-    left: 58.5%;
+    left: 78.5%;
     top: 0%;
 }
 
@@ -448,6 +448,7 @@ nav ul li a{
 button#tickets{
     font-weight: 700;
     position: absolute;
+    top:80%;
     bottom: 10%;
     background: transparent;
     letter-spacing: 2px;
