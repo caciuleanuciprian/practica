@@ -222,6 +222,7 @@ nav ul li a{
     align-items: center;
     justify-content: center;
     background-color: #050216;
+    font-family: 'Poppins', sans-serif;
 }
 
 .history .historyoverlay{
@@ -251,7 +252,7 @@ nav ul li a{
 .history .absolutetext h1#brief{
     transform: rotate(270deg);
     position: absolute;
-    right: 73.5%;
+    right: 83.5%;
     top: -20%;
 }
 
@@ -262,7 +263,7 @@ nav ul li a{
 
 .history .absolutetext h1#history{
     position: absolute;
-    left: 78.5%;
+    left: 93.5%;
     top: 0%;
 }
 
