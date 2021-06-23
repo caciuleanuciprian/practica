@@ -14,19 +14,35 @@
 
 <body>
 
+
+  <div class="hamburgerMenuOverlay" id="navHamburgerOverlay">
+    <div class="hamburgerMenuContainer">
+      <ul>
+    <button type="button" onclick="closeHamburger()" id="hamburgerMenuButtonClosing"><i class="fas fa-times"></i></button>
+    <li><a href="/index.html" id="hamburgerMenu">Home</a></li>
+    <li><a href="./news.html" id="hamburgerMenu">News</a></li>
+    <li><a href="./products.html" id="hamburgerMenu">Shop</a></li>
+    <li><a href="./aboutus.html" id="hamburgerMenu">About Us</a></li>
+    <li><a href="./feedback.html" id="hamburgerMenu">Contact</a></li>
+  </ul>
+  </div>
+  </div>
+
   <!-- Navigation Section -->
 
   <nav>
     <ul>
-      <a href="./index.html" id="logo"><img src="./src/images/fcbarcelonalogo.png" id="logo"></a>
+      <li id="logo"><a href="./index.html" id="logo"><img src="./src/images/fcbarcelonalogo.png" id="logo"></a></li>
       <li><a href="./index.html">Home</a></li>
       <li><a href="./news.html">News</a></li>
       <li><a href="./products.html">Shop</a></li>
       <li><a href="./aboutus.html">About Us</a></li>
       <li><a href="./feedback.html">Contact</a></li>
+      <button id="hamburgerMenu" type="button" onclick="openHamburger()"><i class="fas fa-bars"></i></button>
     </ul>
   </nav>
 
+  
   <!-- Main Section -->
 
   <div class="main">
@@ -161,8 +177,7 @@
       <a href="https://twitter.com/Ieomessiok"><i class="fab fa-twitter"></i></a>
       <a href="https://www.instagram.com/leomessi/"><i class="fab fa-instagram"></i></a>
       <a href="mailto:info@messi.com"><i class="fas fa-envelope"></i></a>
-      <i></i><i></i>
-      <i onclick="topFunction()" class="fa fa-chevron-circle-up"></i>
+      <i onclick="topFunction()" class="fa fa-chevron-circle-up" id="toTopButton"></i>
     </div>
   </footer>
 
