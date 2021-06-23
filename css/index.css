@@ -83,7 +83,6 @@ nav ul a#logo:hover{
 nav ul{
     display: inline-block;
     text-decoration: none;
-    margin-top: 15px;
 }
 
 nav ul button#hamburgerMenu{
