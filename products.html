@@ -8,7 +8,9 @@
     <title>Leo Messi Fan Page - Shop</title>
     <link rel="stylesheet" href="./css/products.css">
     <link rel="shortcut icon" href="/src/logo-for-address-bar.png" type="image/x-icon" />
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
 
 <body>
@@ -30,7 +32,14 @@
 
     <div class="container">
         <div class="small-container">
-            <p>Shop</p>
+            <div class="row">
+                <p>Shop</p>
+                <div class="search-form">
+                    <input type="text" id="search" placeholder="Search.." />
+                    <button id="clearBtn" class="clearBtn"><i class="fa fa-close" ></i></button>
+                    <button id="searchBtn" class="searchBtn"><i class="fa fa-search" ></i></button>
+                </div>
+            </div>
         </div>
 
         <div class="small-container">
@@ -123,7 +132,7 @@
             <div class="item cap" data-price="25" default-order="5">
                 <a href="./product-5-detail.html">
                     <img src="src/images/cap-printed10-messi.jpg"></a>
-                <h4><a href="./product-5-detail.html">Printed Cap with numeber 10 - MESSI</a></h4>
+                <h4><a href="./product-5-detail.html">Printed Cap with number 10 - MESSI</a></h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -198,20 +207,21 @@
     <footer>
         <div class="footerbg"></div>
         <div class="leftcolumn">
-          <a href="https://www.fcbarcelona.com/en/"><img src="/src/images/fcbarcelonalogobetterfinal.png"></a>
+            <a href="https://www.fcbarcelona.com/en/"><img src="/src/images/fcbarcelonalogobetterfinal.png"></a>
         </div>
         <div class="middlecolumn">
-          <h4>All right reserved <span>Caciuleanu Ciprian</span> & <span>Jechiu Alexandrina</span></h4>
+            <h4>All right reserved <span>Caciuleanu Ciprian</span> & <span>Jechiu Alexandrina</span></h4>
         </div>
         <div class="rightcolumn">
-          <a href="https://www.facebook.com/leomessi"><i class="fab fa-facebook"></i></a>
-          <a href="https://twitter.com/Ieomessiok"><i class="fab fa-twitter"></i></a>
-          <a href="https://www.instagram.com/leomessi/"><i class="fab fa-instagram"></i></a>
-          <a href="mailto:info@messi.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.facebook.com/leomessi"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/Ieomessiok"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/leomessi/"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:info@messi.com"><i class="fas fa-envelope"></i></a>
         </div>
-      </footer>
+    </footer>
 
     <script src="/js/products.js"></script>
+
 </body>
 
 </html>

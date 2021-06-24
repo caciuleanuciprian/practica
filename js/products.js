@@ -1,3 +1,5 @@
+//--------------------------toTop Button---------------------------------------
+
 // //Get the button:
 mybutton = document.getElementById("myBtn");
 
@@ -17,6 +19,8 @@ function topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+//---------------------------sorting Elements-------------------------------------
 
 //sort items by price
 
@@ -64,15 +68,15 @@ function insertAfter(elem, refElem) {
     return refElem.parentNode.insertBefore(elem, refElem.nextSibling);
 }
 
-document.querySelector('#all').onclick = function(){filter('all');}
-document.querySelector('#shirt').onclick = function(){ filter('shirt');}
-document.querySelector('#cap').onclick = function(){ filter('cap');}
-document.querySelector('#accessory').onclick = function(){ filter('accessory');}
+document.querySelector('#all').onclick = function () { filter('all'); }
+document.querySelector('#shirt').onclick = function () { filter('shirt'); }
+document.querySelector('#cap').onclick = function () { filter('cap'); }
+document.querySelector('#accessory').onclick = function () { filter('accessory'); }
 
 function filter(typefilter) {
-    console.log(typefilter);
     const filterBox = document.querySelectorAll('.item');
     filterBox.forEach(elem => {
+        //console.log(elem.innerText.toUpperCase());
         elem.classList.remove('hide');
         if (!elem.classList.contains(typefilter) && typefilter !== 'all') {
             elem.classList.add('hide');
@@ -80,3 +84,53 @@ function filter(typefilter) {
     });
 }
 
+//------------------------------Search form-----------------------------------------
+
+document.querySelector('#searchBtn').onclick = searchItem;
+
+function searchItem() {
+    let searchItems = document.querySelectorAll('.item');
+    searchItems.forEach(function (elem) {
+        elem.classList.remove('hide');
+    });
+    let val = document.getElementById("search").value.toUpperCase();
+    //console.log(val);
+    if (val != '') {
+        searchItems.forEach(function (elem) {
+            if (elem.innerText.toUpperCase().search(val) == -1) {
+                elem.classList.add('hide');
+            }
+
+        });
+    } else {
+        searchItems.forEach(function (elem) {
+            elem.classList.remove('hide');
+        });
+    }
+}
+
+var input = document.getElementById("search");
+input.addEventListener("keyup", function (event) {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("searchBtn").click();
+    }
+});
+
+
+
+
+//--------------------------Clear button-----------------------------
+document.querySelector('#clearBtn').onclick = clearInput;
+
+
+function clearInput() {
+    let inputs = document.querySelectorAll("input");
+    inputs.forEach((input) => (input.value = ""));
+    let searchItems = document.querySelectorAll('.item');
+    searchItems.forEach(function (elem) {
+        elem.classList.remove('hide');
+    });
+
+    document.getElementById("search").focus();
+}
