@@ -109,15 +109,15 @@ function searchItem() {
     }
 
     var noResult = new Boolean(true);
-    
+
     searchItems.forEach(function (elem) {
-        if(!elem.classList.contains('hide')){
+        if (!elem.classList.contains('hide')) {
             noResult = false;
             return;
-        } 
+        }
     });
-            
-    if(noResult==true){
+
+    if (noResult == true) {
         let resultBox = document.querySelector('.result');
         resultBox.classList.remove('hide');
     }
@@ -142,6 +142,9 @@ function clearInput() {
     searchItems.forEach(function (elem) {
         elem.classList.remove('hide');
     });
+
+    let resultBox = document.querySelector('.result');
+    resultBox.classList.add('hide');
 
     document.getElementById("search").focus();
 }
