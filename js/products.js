@@ -107,6 +107,20 @@ function searchItem() {
             elem.classList.remove('hide');
         });
     }
+
+    var noResult = new Boolean(true);
+    
+    searchItems.forEach(function (elem) {
+        if(!elem.classList.contains('hide')){
+            noResult = false;
+            return;
+        } 
+    });
+            
+    if(noResult==true){
+        let resultBox = document.querySelector('.result');
+        resultBox.classList.remove('hide');
+    }
 }
 
 var input = document.getElementById("search");
@@ -117,12 +131,9 @@ input.addEventListener("keyup", function (event) {
     }
 });
 
-
-
-
 //--------------------------Clear button-----------------------------
-document.querySelector('#clearBtn').onclick = clearInput;
 
+document.querySelector('#clearBtn').onclick = clearInput;
 
 function clearInput() {
     let inputs = document.querySelectorAll("input");

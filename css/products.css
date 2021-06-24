@@ -365,6 +365,7 @@ i{
      /* opacity: 1;
     animation-duration: 0.5s; */
     animation-fill-mode: forwards;
+    display: none;
   }
 
   @keyframes a1{
