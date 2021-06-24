@@ -65,21 +65,44 @@
     </div>
 
     <!-- Footer Section -->
-    <footer>
-        <div class="footerbg"></div>
-        <div class="leftcolumn2">
-            <a href="https://www.fcbarcelona.com/en/"><img src="/src/images/fcbarcelonalogobetterfinal.png"></a>
-        </div>
-        <div class="middlecolumn">
-            <h4>All right reserved <span>Caciuleanu Ciprian</span> & <span>Jechiu Alexandrina</span></h4>
-        </div>
-        <div class="rightcolumn2">
-            <a href="https://www.facebook.com/leomessi"><i class="fab fa-facebook"></i></a>
-            <a href="https://twitter.com/Ieomessiok"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/leomessi/"><i class="fab fa-instagram"></i></a>
-            <a href="mailto:info@messi.com"><i class="fas fa-envelope"></i></a>
-        </div>
-    </footer>
+  <footer>
+    <div class="footerbg"></div>
+    <div class="leftcolumn2">
+      <a href="https://www.fcbarcelona.com/en/"><img src="src/images/fcbarcelonalogobetter.png"></a>
+    </div>
+    <div class="middlecolumn">
+      <h4>All right reserved <span>Caciuleanu Ciprian</span> & <span>Jechiu Alexandrina</span></h4>
+    </div>
+    <div class="rightcolumn2">
+      <a href="https://www.facebook.com/leomessi"><i class="fab fa-facebook"></i></a>
+      <a href="https://twitter.com/Ieomessiok"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com/leomessi/"><i class="fab fa-instagram"></i></a>
+      <a href="mailto:info@messi.com"><i class="fas fa-envelope"></i></a>
+      <i onclick="topFunction()" class="fa fa-chevron-circle-up" id="toTopButton"></i>
+    </div>
+  </footer>
+
+  <script>
+    // //Get the button:
+    mybutton = document.getElementById("myBtn");
+
+    // // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+  </script>
 
 </body>
 
