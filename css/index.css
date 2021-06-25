@@ -858,3 +858,32 @@ only screen and (min-device-pixel-ratio: 1.5){
         height: 100%;
     }
 }
+
+@media only screen and (max-width: 400px){
+    .timeline .container.left{
+        min-width: 50px;
+        max-width: 120px;
+    }
+
+    .timeline .container.right{
+        min-width: 50px;
+        max-width: 120px;
+    }
+
+    .left{
+        left: -40%;
+    }
+
+    .events .eventscontainer h1{
+        font-size: 18px;
+    }
+
+    button#tickets{
+        font-size: 18px;
+        top: 60%;
+    }
+
+    footer .middlecolumn h4{
+        font-size: 8px;
+    }
+}
