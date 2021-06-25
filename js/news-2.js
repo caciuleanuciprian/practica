@@ -13,6 +13,8 @@ function closeNews1() {
 
     let overlay = document.querySelector('.newsoverlay-all');
     overlay.classList.add('hide');
+    let allnews = document.querySelector('.all-news');
+    allnews.classList.remove('hide');
 }
 
 document.querySelector('#closeBtn-2').onclick = closeNews2;
@@ -27,6 +29,8 @@ function closeNews2() {
     space.classList.remove('hide');
     let overlay = document.querySelector('.newsoverlay-all');
     overlay.classList.add('hide');
+    let allnews = document.querySelector('.all-news');
+    allnews.classList.remove('hide');
 }
 
 document.querySelector('#closeBtn-3').onclick = closeNews3;
@@ -41,7 +45,8 @@ function closeNews3() {
     space.classList.remove('hide');
     let overlay = document.querySelector('.newsoverlay-all');
     overlay.classList.add('hide');
-    
+    let allnews = document.querySelector('.all-news');
+    allnews.classList.remove('hide');
 }
 
 //--------------------------Read More first aticle--------------------
@@ -63,7 +68,8 @@ function readMore1() {
 
     let space = document.querySelector('.space');
     space.classList.add('hide');
-
+    let allnews = document.querySelector('.all-news');
+    allnews.classList.add('hide');
     
 }
 
@@ -84,6 +90,8 @@ function readMore2() {
 
     let space = document.querySelector('.space');
     space.classList.add('hide');
+    let allnews = document.querySelector('.all-news');
+    allnews.classList.add('hide');
 }
 
 //--------------------------Read More third aticle--------------------
@@ -104,5 +112,6 @@ function readMore3() {
     let space = document.querySelector('.space');
     space.classList.add('hide');
 
-    
+    let allnews = document.querySelector('.all-news');
+    allnews.classList.add('hide');
 }

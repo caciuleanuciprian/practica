@@ -117,20 +117,18 @@ marquee{
     /* max-width: 100%;
     width: 1400px;
     height: 100%; */
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
     display: flex;
     justify-content: center;
     
 }
 
 .title{
-    margin: 2% 0 2% 0;
+    margin: 2% 15% 2% 15%;
     /* max-width: 100%;
     width: 1400px;
     height: 100%; */
-    margin-left: 5%;
-    margin-right: 5%;
     font-style: normal;
 }
 
@@ -212,8 +210,8 @@ button a:hover{
 }
 
 .newsoverlay-all{
-    min-width: 70%;
-    max-width: 70%;
+    /* min-width: 70%;
+    max-width: 70%; */
 }
 
 .news-columns{
@@ -224,21 +222,21 @@ button a:hover{
 .news-left-col img{
 /* width: 700px;
 height: 367px; */
-width: 90%;
-padding: 5% 5% 0 5%;
+width: 70%;
+padding: 5% 15% 0 15%;
 margin: auto;
 display: block;
 }
 
 .news-left-col h2{
     color:#2b3542;
-    padding: 2%;
+    padding: 2% 10% 2% 10%;
     text-align: center;
 }
 
 .news-right-col p{
     color:#2b3542;
-    padding: 2%;
+    padding: 2% 10% 2% 10%;
 }
 
 .fa-times{
