@@ -107,6 +107,10 @@ nav ul li a{
     display: none;
 }
 
+.hamburgerMenuOverlay .hamburgerMenuContainer ul button i{
+    color: whitesmoke;
+}
+
 /* Main section */
 
 marquee{
@@ -218,10 +222,11 @@ button a:hover{
    
 }
 
-.newsoverlay-all{
-    /* min-width: 70%;
-    max-width: 70%; */
+/*.newsoverlay-all{
+    min-width: 70%;
+    max-width: 70%;
 }
+*/
 
 .news-columns{
         background-color: white;
@@ -407,24 +412,7 @@ footer .footerbg{
 }
 
 @media only screen and (max-width: 768px){
-    .main .mainimage h4{
-        font-size: 14px;
-    }
-    .timeline{
-        max-width: 768px;
-    }
-    .container.left{
-        min-width: 300px;
-    }
-
-    .left{
-        left: -40%;
-    }
-
-    .container.right{
-        min-width: 300px;
-    }
-    
+     
     footer .rightcolumn{
         margin-right: 5px;
     }

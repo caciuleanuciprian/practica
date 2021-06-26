@@ -14,39 +14,52 @@
 
 <body>
 
-    <nav>
-        <ul>
-            <a href="./index.html" id="logo"><img src="./src/images/fcbarcelonalogo.png" id="logo"></a>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./news.html">News</a></li>
-            <li><a href="./products.html">Shop</a></li>
-            <li><a href="./aboutus.html">About Us</a></li>
-            <li><a href="./feedback.html">Contact</a></li>
-        </ul>
-    </nav>
+  <div class="hamburgerMenuOverlay" id="navHamburgerOverlay">
+    <div class="hamburgerMenuContainer">
+      <ul>
+    <button type="button" onclick="closeHamburger()" id="hamburgerMenuButtonClosing"><i class="fas fa-times"></i></button>
+    <li><a href="practica/index.html" id="hamburgerMenu">Home</a></li>
+    <li><a href="./news.html" id="hamburgerMenu">News</a></li>
+    <li><a href="./products.html" id="hamburgerMenu">Shop</a></li>
+    <li><a href="./aboutus.html" id="hamburgerMenu">About Us</a></li>
+    <li><a href="./feedback.html" id="hamburgerMenu">Contact</a></li>
+  </ul>
+  </div>
+  </div>
+
+  <!-- Navigation Section -->
+
+  <nav>
+    <ul>
+      <li id="logo"><a href="practica/index.html" id="logo"><img src="./src/images/fcbarcelonalogo.png" id="logo"></a></li>
+      <li><a href="practica/index.html">Home</a></li>
+      <li><a href="./news.html">News</a></li>
+      <li><a href="./products.html">Shop</a></li>
+      <li><a href="./aboutus.html">About Us</a></li>
+      <li><a href="./feedback.html">Contact</a></li>
+      <button id="hamburgerMenu" type="button" onclick="openHamburger()"><i class="fas fa-bars"></i></button>
+    </ul>
+  </nav>
 
     <div class="h1container">
         <h1>The team</h1>
     </div>
     <div class="columncontainers">
-        <div class="leftcolumn">
+        <div class="leftcolumn2">
             <img src="/src/images/caciuleanu-ciprian-foto.jpg">
             <h3><span>Caciuleanu</span> Ciprian</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Nesciunt quas nam iure modi accusamus error corporis incidunt perspiciatis iusto officiis.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Explicabo ipsa in velit ullam vero dolore tempora, voluptates ipsum nemo architecto?
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Tenetur ad nostrum explicabo nulla quis tempora perferendis ex praesentium, eveniet dignissimos.
+            <p>Hello! I am a young student, passionate about technology, video games and playing the piano.
+              <br>
+              Some people might call me lazy, as I am keen on finding the shortest path in solving a problem, but I can strongly affirm that creativity, spontaneity and efficiency are my top qualities that make my efforts stand out, proving that hard work does not always consist in time and energy consuming activities with long, infinite answers. Just make life simple.
             </p>
             <div class="buttonscontainer">
-                <button id="cv-ciprian"><a href="#">CV</a></button>
+                <button id="cv-ciprian"><a href="https://docs.google.com/document/d/1sRYDFvAYZ6SiBOZOPZIkYomtHG_JXDHmLuudmHD2TSc/edit?usp=sharing">CV</a></button>
                 <button id="linkedin-ciprian"><a
                         href="https://www.linkedin.com/in/caciuleanu-rosu-constantin-ciprian/"><i
                             class="fab fa-linkedin"></i></a></button>
             </div>
         </div>
-        <div class="rightcolumn">
+        <div class="rightcolumn2">
             <img src="/src/images/jechiu-alexandrina.jpg">
             <h3><span>Jechiu</span> Alexandrina</h3>
             <p>Hi! I'm a hardworking and energetic individual with a great passion for programming and managing databases. 
@@ -64,21 +77,21 @@
     </div>
 
     <!-- Footer Section -->
-  <footer>
-    <div class="footerbg"></div>
-    <div class="leftcolumn2">
-      <a href="https://www.fcbarcelona.com/en/"><img src="src/images/fcbarcelonalogobetter.png"></a>
-    </div>
-    <div class="middlecolumn">
-      <h4>All right reserved <span>Caciuleanu Ciprian</span> & <span>Jechiu Alexandrina</span></h4>
-    </div>
-    <div class="rightcolumn2">
-      <a href="https://www.facebook.com/leomessi"><i class="fab fa-facebook"></i></a>
-      <a href="https://twitter.com/Ieomessiok"><i class="fab fa-twitter"></i></a>
-      <a href="https://www.instagram.com/leomessi/"><i class="fab fa-instagram"></i></a>
-      <a href="mailto:info@messi.com"><i class="fas fa-envelope"></i></a>
-      <i onclick="topFunction()" class="fa fa-chevron-circle-up" id="toTopButton"></i>
-    </div>
+    <footer>
+      <div class="footerbg"></div>
+      <div class="leftcolumn">
+          <a href="https://www.fcbarcelona.com/en/"><img src="src/images/fcbarcelonalogobetter.png"></a>
+      </div>
+      <div class="middlecolumn">
+          <h4>All right reserved <span>Caciuleanu Ciprian</span> & <span>Jechiu Alexandrina</span></h4>
+      </div>
+      <div class="rightcolumn">
+          <a href="https://www.facebook.com/leomessi"><i class="fab fa-facebook"></i></a>
+          <a href="https://twitter.com/Ieomessiok"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/leomessi/"><i class="fab fa-instagram"></i></a>
+          <a href="mailto:info@messi.com"><i class="fas fa-envelope"></i></a>
+          <i onclick="topFunction()" class="fa fa-chevron-circle-up" id="toTopButton"></i>
+      </div>
   </footer>
 
   <script>
@@ -103,6 +116,7 @@
     }
   </script>
 
+<script src="./js/hamburgerMenu.js"></script>
 </body>
 
 </html>

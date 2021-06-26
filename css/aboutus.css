@@ -63,16 +63,6 @@ nav ul a:hover{
     transition: ease-in-out 0.3s;
 }
 
-nav ul a img#logo{
-    position: relative;
-    display: block;
-    margin-top: -15px;
-    width: 50px;
-    height: 50px;
-    float: left;
-    padding-left: 50px;
-}
-
 nav ul a#logo:hover{
     color: whitesmoke;
     border-bottom: transparent;
@@ -82,12 +72,24 @@ nav ul a#logo:hover{
 nav ul{
     display: inline-block;
     text-decoration: none;
-    margin-top: 15px;
+}
+
+nav ul button#hamburgerMenu{
+    display: none;
 }
 
 nav ul li{
     display: inline-block;
     text-align: center;
+}
+
+nav ul li#logo img#logo{
+    position: absolute;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    left: 1%;
+    top: 15%;
 }
 
 nav ul li a{
@@ -98,6 +100,15 @@ nav ul li a{
     font-size: 18px;
     letter-spacing: 3px;
 }
+
+.hamburgerMenuOverlay{
+    display: none;
+}
+
+.hamburgerMenuOverlay .hamburgerMenuContainer ul button i{
+    color: whitesmoke;
+}
+
 
 /* Main Content Section */
 
@@ -126,7 +137,7 @@ h1{
     margin-bottom: 50px;
 }
 
-.leftcolumn{
+.leftcolumn2{
     display: flex;
     width: 30%;
     height: 100%;
@@ -139,13 +150,13 @@ h1{
              20px -20px 60px #ab4b4b;
 }
 
-.leftcolumn .buttonscontainer{
+.leftcolumn2 .buttonscontainer{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 
-.leftcolumn h3{
+.leftcolumn2 h3{
     text-align: center;
     margin: 20px 0px;
     /* font-family: 'Staatliches', cursive; */
@@ -153,11 +164,11 @@ h1{
     letter-spacing: 3px;
 }
 
-.leftcolumn h3 span{
+.leftcolumn2 h3 span{
     color: #ff4747;
 }
 
-.leftcolumn p{
+.leftcolumn2 p{
     padding: 0px 20px 20px 20px;
     /* font-family: 'Staatliches', cursive; */
     color: whitesmoke;
@@ -165,7 +176,7 @@ h1{
     text-align:center;
 }
 
-.leftcolumn .buttonscontainer button{
+.leftcolumn2 .buttonscontainer button{
     margin-bottom: 15px;
     /* font-family: 'Staatliches', cursive; */
     background: transparent;
@@ -173,7 +184,7 @@ h1{
     padding: 10px 0px;
 }
 
-.leftcolumn .buttonscontainer button a{
+.leftcolumn2 .buttonscontainer button a{
     padding: 8px 60px;
     text-decoration: none;
     text-align: center;
@@ -184,7 +195,7 @@ h1{
     border: 2px whitesmoke solid;
 }
 
-.leftcolumn .buttonscontainer button a:hover{
+.leftcolumn2 .buttonscontainer button a:hover{
     transition: ease-in-out 0.2s;
     background: whitesmoke;
     color: #ff4747;
@@ -194,7 +205,7 @@ h1{
     border-left-width: 5px;
 }
 
-.leftcolumn img{
+.leftcolumn2 img{
     padding: 15px;
     border-radius: 50px;
     width: 90%;
@@ -202,7 +213,7 @@ h1{
     margin: 0 auto;
 }
 
-.rightcolumn{
+.rightcolumn2{
     display: flex;
     width: 30%;
     height: 100%;
@@ -215,13 +226,13 @@ h1{
              -20px -20px 60px #ab4b4b;
 }
 
-.rightcolumn .buttonscontainer{
+.rightcolumn2 .buttonscontainer{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 
-.rightcolumn h3{
+.rightcolumn2 h3{
     text-align: center;
     margin: 20px 0px;
     /* font-family: 'Staatliches', cursive; */
@@ -229,11 +240,11 @@ h1{
     letter-spacing: 3px;
 }
 
-.rightcolumn h3 span{
+.rightcolumn2 h3 span{
     color: #ff4747;
 }
 
-.rightcolumn p{
+.rightcolumn2 p{
     padding: 0px 20px 20px 20px;
     /* font-family: 'Staatliches', cursive; */
     color: whitesmoke;
@@ -241,7 +252,7 @@ h1{
     text-align:center;
 }
 
-.rightcolumn .buttonscontainer button{
+.rightcolumn2 .buttonscontainer button{
     margin-bottom: 15px;
     /* font-family: 'Staatliches', cursive; */
     background: transparent;
@@ -249,7 +260,7 @@ h1{
     padding: 10px 0px;
 }
 
-.rightcolumn .buttonscontainer button a{
+.rightcolumn2 .buttonscontainer button a{
     padding: 8px 60px;
     text-decoration: none;
     text-align: center;
@@ -260,7 +271,7 @@ h1{
     border: 2px whitesmoke solid;
 }
 
-.rightcolumn .buttonscontainer button a:hover{
+.rightcolumn2 .buttonscontainer button a:hover{
     transition: ease-in-out 0.2s;
     background: whitesmoke;
     color: #ff4747;
@@ -270,7 +281,7 @@ h1{
     border-left-width: 5px;
 }
 
-.rightcolumn img{
+.rightcolumn2 img{
     padding: 15px;
     border-radius: 50px;
     width: 90%;
@@ -282,7 +293,7 @@ h1{
 
 footer{
     width: 100%;
-    height: 13%;
+    height: 100%;
     background: black;
     display: flex;
     justify-content: space-between;
@@ -292,7 +303,7 @@ footer{
     box-sizing: border-box;
 }
 
-footer .leftcolumn2{
+footer .leftcolumn{
     width: 33%;
     height: 100%;
     display: flex;
@@ -303,14 +314,15 @@ footer .leftcolumn2{
 
 footer .middlecolumn{
     width: 33%;
-    height: 30%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items:center;
     z-index: 2;
+
 }
 
-footer .rightcolumn2{
+footer .rightcolumn{
     width: 33%;
     height: 100%;
     display: flex;
@@ -321,13 +333,13 @@ footer .rightcolumn2{
     margin-right: 50px;
 }
 
-footer .leftcolumn2 h3{
+footer .leftcolumn h3{
     color: whitesmoke;
     font-family: 'Poppins', sans-serif;
 
 }
 
-footer .rightcolumn2 i{
+footer .rightcolumn i{
     color: whitesmoke;
     font-size: 28px;
     margin: 0px 30px 0px 30px;
@@ -340,24 +352,24 @@ footer .middlecolumn h4{
     color: #ff4747;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
-    
+    position: absolute;
+    margin-top: 5.5%;
 }
 
-footer .leftcolumn2 img{
+footer .leftcolumn img{
     max-width: 170px;
     max-height: 170px;
 
 }
 
-footer .rightcolumn2 i:hover{
+footer .rightcolumn i:hover{
     opacity: 1;
     transition: ease-in-out 0.3s;
     transform: scale(1.3);
     color: #ff4747;
 }
 
-footer .leftcolumn2 img:hover{
+footer .leftcolumn img:hover{
     transition: ease-in-out 0.5s;
     transform: scale(1.1);
 }
@@ -376,4 +388,263 @@ footer .footerbg{
     height: 100%;
     opacity: 0.5;
     filter: blur(5px);
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1024px){
+    footer .middlecolumn h4{
+        margin-top: 10%;
+    }
+
+    .leftcolumn2 .buttonscontainer button a{
+        padding: 8px 50px;
+    }
+
+    .rightcolumn2 .buttonscontainer button a{
+        padding: 8px 50px;
+    }
+
+    .leftcolumn2{
+        width: 40%;
+    }
+
+    .rightcolumn2{
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    
+    .leftcolumn2{
+        width: 45%;
+    }
+
+    .rightcolumn2{
+        width: 45%;
+    }
+
+    footer .rightcolumn{
+        margin-right: 5px;
+    }
+
+    footer .rightcolumn a i{
+        font-size: 18px;
+    }
+
+    footer .rightcolumn a{
+        margin: 0px;
+    }
+
+    footer .rightcolumn i{
+        margin-right: 10px;
+    }
+
+    #toTopButton{
+        display: none;
+    }
+
+    footer .middlecolumn h4{
+        margin-top: 15%;
+    }
+}
+
+@media only screen and (max-width: 480px){
+
+    .columncontainers{
+        flex-direction: column;
+    }
+
+    .leftcolumn2{
+        width: 90%;
+        margin-bottom: 50px;
+    }
+
+    .rightcolumn2{
+        width: 90%;
+    }
+
+    footer{
+        height: 10vh;
+    }
+
+    footer .leftcolumn img{
+        width: 75px;
+        height: 65px;
+    }
+
+    footer .rightcolumn{
+        margin-right: 0px;
+    }
+
+    footer .rightcolumn a i{
+        font-size: 18px;
+    }
+
+    footer .rightcolumn a{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    footer .rightcolumn i{
+        margin: 0px 5px 0px 5px;
+    }
+    footer .middlecolumn h4{
+        font-size: 12px;
+        margin-top: 8vh;
+    }
+
+    nav ul a img#logo{
+        width: 50px;
+        height: 50px;
+        padding-left: 20px;
+        margin-top: -15px;
+    }
+
+    nav ul li a{
+        display: none;
+    }
+
+    nav ul li#logo a#logo{
+        display: block;
+    }
+
+    nav ul li#logo img#logo{
+        display: block;
+        top: 40%;
+        left: 0%;
+        width: 40px;
+        height: 40px;
+    }
+
+    nav ul a#logo{
+        float: left;
+    }
+
+    nav ul button#hamburgerMenu{
+        display: inline-block;
+        position: absolute;
+        background: transparent;
+        border: transparent;
+        right: 5%;
+        top: 25%;
+        font-size: 18px;
+        color: whitesmoke;
+    }
+
+    .hamburgerMenuOverlay{
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+    }
+
+    .hamburgerMenuOverlay.active{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: black;
+        z-index: 6;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+    }
+
+    .hamburgerMenuOverlay.active .hamburgerMenuContainer{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+
+    }
+
+    .hamburgerMenuOverlay.active .hamburgerMenuContainer ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hamburgerMenuContainer ul li{
+        text-decoration: none;
+        list-style-type: none;
+        text-align: center;
+        border: 2px whitesmoke solid;
+        padding: 15px;
+        width: 100%;
+        margin: 10px 0px;
+    }
+
+    .hamburgerMenuContainer ul li a#hamburgerMenu{
+        text-decoration: none;
+        font-size: 48px;
+        font-family: 'Staatliches', cursive;
+        letter-spacing: 5px;
+        color: whitesmoke;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    button#hamburgerMenuButtonClosing{
+        display: block;
+        position: absolute;
+        top: 0%;
+        right: 6%;
+        background: transparent;
+        border: transparent;
+        padding: 15px;
+        font-size: 36px;
+    }
+
+    .newsoverlay{
+        width: 90vw;
+        margin: 0 auto;
+    }
+
+    .news-left-col h2{
+        font-size: 18px;
+    }
+
+    .news-right-col p{
+        padding: 2% 5% 2% 5%;
+        font-size: 12px;
+    }
+
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5){
+
+  html,
+  body{
+    width:100%;
+    overflow-x:hidden;
+  }
+
+}
+
+@media only screen and (max-width: 425px){
+    body{
+        overflow-x: hidden;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    footer .middlecolumn h4{
+        font-size: 8px;
+    }
 }
