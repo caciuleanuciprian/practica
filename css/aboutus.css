@@ -112,6 +112,10 @@ nav ul li a{
 
 /* Main Content Section */
 
+.space{
+    height: 20vh;
+}
+
 .h1container{
     display: flex;
     justify-content: center;
