@@ -112,11 +112,11 @@ nav ul li a{
     letter-spacing: 3px;
 }
 
-/* Main Content Section */
-
 .hamburgerMenuOverlay{
     display: none;
 }
+
+/* Main Content Section */
 
 .main{
     width: 100vw;
@@ -504,7 +504,7 @@ footer .leftcolumn{
 
 footer .middlecolumn{
     width: 33%;
-    height: 30%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items:center;
@@ -540,9 +540,8 @@ footer .middlecolumn h4{
     opacity: 0.3;
     color: #ff4747;
     justify-content: center;
-    align-items: center;
-    margin-top: 100px;
-    
+    align-items: center;    
+    margin-top: 14vh;
 }
 
 footer .leftcolumn img{
@@ -681,7 +680,7 @@ footer .footerbg{
     }
 
     footer{
-        height: 20vh;
+        height: 10vh;
     }
 
     footer .leftcolumn img{
