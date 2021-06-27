@@ -5,34 +5,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cap - MESSI</title>
+    <title>20/21 La Liga Away Match Shirt - MESSI</title>
     <link rel="shortcut icon" href="/src/logo-for-address-bar.png" type="image/x-icon" />
-
     <link rel="stylesheet" href="./css/product-detail.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
 
 <body>
     <div class="header">
 
-        <!-- Navigation Section -->
-
-        <nav>
+        <div class="hamburgerMenuOverlay" id="navHamburgerOverlay">
+            <div class="hamburgerMenuContainer">
+              <ul>
+            <button type="button" onclick="closeHamburger()" id="hamburgerMenuButtonClosing"><i class="fas fa-times"></i></button>
+            <li><a href="./index.html" id="hamburgerMenu">Home</a></li>
+            <li><a href="./news.html" id="hamburgerMenu">News</a></li>
+            <li><a href="./products.html" id="hamburgerMenu">Shop</a></li>
+            <li><a href="./aboutus.html" id="hamburgerMenu">About Us</a></li>
+            <li><a href="./feedback.html" id="hamburgerMenu">Contact</a></li>
+          </ul>
+          </div>
+          </div>
+        
+          <!-- Navigation Section -->
+        
+          <nav>
             <ul>
-                <a href="./index.html" id="logo"><img src="./src/images/fcbarcelonalogo.png" id="logo"></a>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./news.html">News</a></li>
-                <li><a href="./products.html">Shop</a></li>
-                <li><a href="./aboutus.html">About Us</a></li>
-                <li><a href="./feedback.html">Contact</a></li>
+              <li id="logo"><a href="./index.html" id="logo"><img src="./src/images/fcbarcelonalogo.png" id="logo"></a></li>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./news.html">News</a></li>
+              <li><a href="./products.html">Shop</a></li>
+              <li><a href="./aboutus.html">About Us</a></li>
+              <li><a href="./feedback.html">Contact</a></li>
+              <button id="hamburgerMenu" type="button" onclick="openHamburger()"><i class="fas fa-bars"></i></button>
             </ul>
-        </nav>
+          </nav>
     </div>
 
     <div class="container">
-
         <div class="row">
-            <div class="col left">
+            <div class="col left2">
 
                 <div class="foto">
                     <img src="src/images/cap-messi.jpg" width="100%" id="ProductImg">
@@ -55,30 +69,31 @@
 
             </div>
 
-            <div class="col right">
-                <p>Products / Cap</p>
+            <div class="col right2">
+                <p>Products / Caps</p>
                 <h1>Cap - MESSI</h1>
                 <h4>$15.00</h4>
                 <select>
                     <option>Available size</option>
-                    <option>One size</option>
+                    <option>XS</option>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                    <option>XL</option>
+                    <option>XLL</option>
                 </select>
                 <div class="product-detail">
                     <h3>Product Details</h3>
-                    <p1>FC Barcelona Messi cap with the player’s signature and printed with number 10.
-                        Engineered with mesh effect on the front.
-                        Semi-rigid visor. Velcro adjustable on the back.
-                        Colour: yellow and blue and scarlet. </p1>
+                    <p1>FC Barcelona Messi cap with the player’s signature and printed with number 10. Engineered with mesh effect on the front. Semi-rigid visor. Velcro adjustable on the back. Colour: yellow and blue and scarlet.</p1>
                 </div>
-                <a href="https://store.fcbarcelona.com/en/p/8435047859090"><button class="buyBtn">Buy</button></a>
-
+                <a href="https://store.fcbarcelona.com/en/p/22100?player=FCB_MESSI"><button class="buyBtn">Buy</button></a>
             </div>
 
         </div>
 
     </div>
 
-    <div class="container left comment">
+    <div class="container left2 comment">
         <!-- begin wwww.htmlcommentbox.com -->
         <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Form</a> is loading
             comments...</div>
@@ -97,6 +112,26 @@
         </script>
         <!-- end www.htmlcommentbox.com -->
     </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footerbg"></div>
+        <div class="leftcolumn">
+            <a href="https://www.fcbarcelona.com/en/"><img src="src/images/fcbarcelonalogobetter.png"></a>
+        </div>
+        <div class="middlecolumn">
+            <h4>All right reserved <span>Caciuleanu Ciprian</span> & <span>Jechiu Alexandrina</span></h4>
+        </div>
+        <div class="rightcolumn">
+            <a href="https://www.facebook.com/leomessi"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/Ieomessiok"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/leomessi/"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:info@messi.com"><i class="fas fa-envelope"></i></a>
+            <i onclick="topFunction()" class="fa fa-chevron-circle-up" id="toTopButton"></i>
+        </div>
+    </footer>
+
+    <script src="./js/hamburgerMenu.js"></script>
 
 </body>
 

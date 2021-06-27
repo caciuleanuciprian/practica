@@ -16,18 +16,32 @@
 <body>
     <div class="header">
 
-        <!-- Navigation Section -->
-
-        <nav>
+        <div class="hamburgerMenuOverlay" id="navHamburgerOverlay">
+            <div class="hamburgerMenuContainer">
+              <ul>
+            <button type="button" onclick="closeHamburger()" id="hamburgerMenuButtonClosing"><i class="fas fa-times"></i></button>
+            <li><a href="./index.html" id="hamburgerMenu">Home</a></li>
+            <li><a href="./news.html" id="hamburgerMenu">News</a></li>
+            <li><a href="./products.html" id="hamburgerMenu">Shop</a></li>
+            <li><a href="./aboutus.html" id="hamburgerMenu">About Us</a></li>
+            <li><a href="./feedback.html" id="hamburgerMenu">Contact</a></li>
+          </ul>
+          </div>
+          </div>
+        
+          <!-- Navigation Section -->
+        
+          <nav>
             <ul>
-                <a href="./index.html" id="logo"><img src="./src/images/fcbarcelonalogo.png" id="logo"></a>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./news.html">News</a></li>
-                <li><a href="./products.html">Shop</a></li>
-                <li><a href="./aboutus.html">About Us</a></li>
-                <li><a href="./feedback.html">Contact</a></li>
+              <li id="logo"><a href="./index.html" id="logo"><img src="./src/images/fcbarcelonalogo.png" id="logo"></a></li>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./news.html">News</a></li>
+              <li><a href="./products.html">Shop</a></li>
+              <li><a href="./aboutus.html">About Us</a></li>
+              <li><a href="./feedback.html">Contact</a></li>
+              <button id="hamburgerMenu" type="button" onclick="openHamburger()"><i class="fas fa-bars"></i></button>
             </ul>
-        </nav>
+          </nav>
     </div>
 
     <div class="container">
@@ -206,14 +220,14 @@
             </div>
         </div>
         <button id="myBtn" class="btn"><i onclick="topFunction()" class="fa fa-arrow-circle-up"
-                style="font-size:36px;color:rgb(0, 0, 0)"></i></button>
+                style="font-size:36px;color:rgb(0, 0, 0);display: none;"></i></button>
     </div>
 
     <!-- Footer Section -->
     <footer>
         <div class="footerbg"></div>
         <div class="leftcolumn">
-            <a href="https://www.fcbarcelona.com/en/"><img src="/src/images/fcbarcelonalogobetterfinal.png"></a>
+            <a href="https://www.fcbarcelona.com/en/"><img src="src/images/fcbarcelonalogobetter.png"></a>
         </div>
         <div class="middlecolumn">
             <h4>All right reserved <span>Caciuleanu Ciprian</span> & <span>Jechiu Alexandrina</span></h4>
@@ -223,10 +237,12 @@
             <a href="https://twitter.com/Ieomessiok"><i class="fab fa-twitter"></i></a>
             <a href="https://www.instagram.com/leomessi/"><i class="fab fa-instagram"></i></a>
             <a href="mailto:info@messi.com"><i class="fas fa-envelope"></i></a>
+            <i onclick="topFunction()" class="fa fa-chevron-circle-up" id="toTopButton"></i>
         </div>
     </footer>
 
     <script src="/js/products.js"></script>
+    <script src="./js/hamburgerMenu.js"></script>
 
 </body>
 
