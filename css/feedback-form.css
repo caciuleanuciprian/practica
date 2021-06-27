@@ -68,14 +68,13 @@ nav ul a:hover{
     transition: ease-in-out 0.3s;
 }
 
-nav ul a img#logo{
-    position: relative;
-    display: block;
-    margin-top: -15px;
+nav ul li#logo img#logo{
+    position: absolute;
+    display: inline-block;
     width: 50px;
     height: 50px;
-    float: left;
-    padding-left: 50px;
+    left: 1%;
+    top: 15%;
 }
 
 nav ul a#logo:hover{
@@ -87,7 +86,6 @@ nav ul a#logo:hover{
 nav ul{
     display: inline-block;
     text-decoration: none;
-    margin-top: 15px;
 }
 
 nav ul li{
@@ -102,6 +100,18 @@ nav ul li a{
     color: whitesmoke;
     font-size: 18px;
     letter-spacing: 3px;
+}
+
+.hamburgerMenuOverlay{
+    display: none;
+}
+
+.hamburgerMenuOverlay .hamburgerMenuContainer ul button i{
+    color: whitesmoke;
+}
+
+nav ul button#hamburgerMenu{
+    display: none;
 }
 
 .container{
@@ -195,7 +205,7 @@ input[type=text], input[type=email], select, textarea {
 
 footer{
     width: 100%;
-    height: 13%;
+    height: 100%;
     background: black;
     display: flex;
     justify-content: space-between;
@@ -216,11 +226,12 @@ footer .leftcolumn{
 
 footer .middlecolumn{
     width: 33%;
-    height: 30%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items:center;
     z-index: 2;
+
 }
 
 footer .rightcolumn{
@@ -253,8 +264,8 @@ footer .middlecolumn h4{
     color: #ff4747;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
-    
+    position: absolute;
+    margin-top: 5.5%;
 }
 
 footer .leftcolumn img{
@@ -289,4 +300,265 @@ footer .footerbg{
     height: 100%;
     opacity: 0.5;
     filter: blur(5px);
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1024px){
+    footer .middlecolumn h4{
+        margin-top: 10%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    
+    .left{
+        margin: 3%;
+        float: none;
+    }
+
+    .right{
+        float: none;
+        border-top: 2px solid black;
+    }
+
+    .col{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    footer .rightcolumn{
+        margin-right: 5px;
+    }
+
+    footer .rightcolumn a i{
+        font-size: 18px;
+    }
+
+    footer .rightcolumn a{
+        margin: 0px;
+    }
+
+    footer .rightcolumn i{
+        margin-right: 10px;
+    }
+
+    #toTopButton{
+        display: none;
+    }
+
+    footer .middlecolumn h4{
+        margin-top: 15%;
+    }
+}
+
+@media only screen and (max-width: 480px){
+
+    
+
+    footer{
+        height: 10vh;
+    }
+
+    footer .leftcolumn img{
+        width: 75px;
+        height: 65px;
+    }
+
+    footer .rightcolumn{
+        margin-right: 0px;
+    }
+
+    footer .rightcolumn a i{
+        font-size: 18px;
+    }
+
+    footer .rightcolumn a{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    footer .rightcolumn i{
+        margin: 0px 5px 0px 5px;
+    }
+    footer .middlecolumn h4{
+        font-size: 12px;
+        margin-top: 8vh;
+    }
+
+    nav ul a img#logo{
+        width: 50px;
+        height: 50px;
+        padding-left: 20px;
+        margin-top: -15px;
+    }
+
+    nav ul li a{
+        display: none;
+    }
+
+    nav ul li#logo a#logo{
+        display: block;
+    }
+
+    nav ul li#logo img#logo{
+        display: block;
+        top: 40%;
+        left: 0%;
+        width: 40px;
+        height: 40px;
+    }
+
+    nav ul a#logo{
+        float: left;
+    }
+
+    nav ul button#hamburgerMenu{
+        display: inline-block;
+        position: absolute;
+        background: transparent;
+        border: transparent;
+        right: 5%;
+        top: 25%;
+        font-size: 18px;
+        color: whitesmoke;
+    }
+
+    .hamburgerMenuOverlay{
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+    }
+
+    .hamburgerMenuOverlay.active{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: black;
+        z-index: 6;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+    }
+
+    .hamburgerMenuOverlay.active .hamburgerMenuContainer{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+
+    }
+
+    .hamburgerMenuOverlay.active .hamburgerMenuContainer ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hamburgerMenuContainer ul li{
+        text-decoration: none;
+        list-style-type: none;
+        text-align: center;
+        border: 2px whitesmoke solid;
+        padding: 15px;
+        width: 100%;
+        margin: 10px 0px;
+    }
+
+    .hamburgerMenuContainer ul li a#hamburgerMenu{
+        text-decoration: none;
+        font-size: 48px;
+        font-family: 'Staatliches', cursive;
+        letter-spacing: 5px;
+        color: whitesmoke;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    button#hamburgerMenuButtonClosing{
+        display: block;
+        position: absolute;
+        top: 0%;
+        right: 6%;
+        background: transparent;
+        border: transparent;
+        padding: 15px;
+        font-size: 36px;
+    }
+
+    .newsoverlay{
+        width: 90vw;
+        margin: 0 auto;
+    }
+
+    .news-left-col h2{
+        font-size: 18px;
+    }
+
+    .news-right-col p{
+        padding: 2% 5% 2% 5%;
+        font-size: 12px;
+    }
+
+    h2{
+        font-size: 1.75em;
+    }
+
+    p{
+        font-size: 14px;
+    }
+
+    .row-header{
+        padding: 5% 8%;
+    }
+
+    .row-content{
+        padding: 5%;
+    }
+
+    .row-content.map{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5){
+
+  html,
+  body{
+    width:100%;
+    overflow-x:hidden;
+  }
+
+}
+
+@media only screen and (max-width: 425px){
+    body{
+        overflow-x: hidden;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    footer .middlecolumn h4{
+        font-size: 8px;
+    }
 }
