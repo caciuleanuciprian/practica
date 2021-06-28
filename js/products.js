@@ -148,3 +148,13 @@ function clearInput() {
 
     document.getElementById("search").focus();
 }
+
+const navOverlay = document.getElementById("navHamburgerOverlay");
+
+function openHamburger(){
+    navOverlay.classList.add("active");
+}
+
+function closeHamburger(){
+    navOverlay.classList.remove("active");
+}
