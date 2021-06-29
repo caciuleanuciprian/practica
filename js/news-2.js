@@ -1,5 +1,6 @@
 //--------------------------Close button-----------------------------
 
+// First article
 document.querySelector('#closeBtn-1').onclick = closeNews1;
 
 function closeNews1() {
@@ -17,6 +18,7 @@ function closeNews1() {
     allnews.classList.remove('hide');
 }
 
+// Second article
 document.querySelector('#closeBtn-2').onclick = closeNews2;
 
 function closeNews2() {
@@ -33,6 +35,7 @@ function closeNews2() {
     allnews.classList.remove('hide');
 }
 
+// Third article
 document.querySelector('#closeBtn-3').onclick = closeNews3;
 
 function closeNews3() {

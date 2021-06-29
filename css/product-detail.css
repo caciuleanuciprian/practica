@@ -112,6 +112,8 @@ nav ul button#hamburgerMenu{
     display: none;
 }
 
+/* Main Content Section */
+
 .container {
     display: flex;
     margin-top: 50px;

@@ -213,11 +213,9 @@ nav ul li a{
 }
 
 /* History/Timeline Section */
-/* Daca se strica e RIP */
 
 .history{
     width: 100vw;
-    /* height: 100vh; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -359,37 +357,6 @@ nav ul li a{
     font-family: 'Poppins', sans-serif;
 }
   
-/* media queries for timeline
-  
-@media screen and (max-width: 600px) {
-    .timeline::after {
-      left: 31px;
-}
-  
-.container {
-      width: 100%;
-      padding-left: 70px;
-      padding-right: 25px;
-}
-  
-.container::before {
-      left: 60px;
-      border: medium solid white;
-      border-width: 10px 10px 10px 0;
-      border-color: transparent white transparent transparent;
-}
-  
-.left::after, .right::after {
-      left: 15px;
-}
-  
-.right {
-      left: 0%;
-    }
-}
-  
-*/
-
 /* Events Section */
 
 .events{

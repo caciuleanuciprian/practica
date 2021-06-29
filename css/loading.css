@@ -1,3 +1,6 @@
+/* Font Imports & Global Modifiers */
+
+
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 *{
     padding: 0;
@@ -21,6 +24,8 @@ body{
         opacity: 1;
     }
 }
+
+/* Main Content Section */
 
 .background{
     display: flex;

@@ -114,6 +114,8 @@ nav ul button#hamburgerMenu{
     display: none;
 }
 
+/* Main Content Section */
+
 .container{
     margin-top: 70px;
     max-width: 100%;
@@ -123,11 +125,6 @@ nav ul button#hamburgerMenu{
     margin-right: auto;
     display:block;
 }
-
-/* .container{
-    margin: 100px 150px 150px 150px;
-    height: auto;
-    } */
 
 .col {
     width: 46%;
