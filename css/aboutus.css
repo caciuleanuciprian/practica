@@ -5,7 +5,7 @@
 }
 
 body{
-    background: #954141;
+    background: #f5f5f5;
     animation: fadein 1s normal;
     box-sizing: border-box;
     overflow-x: hidden;
@@ -128,7 +128,7 @@ h1{
     /* font-family: 'Staatliches', cursive; */
     margin-top: 50px;
     letter-spacing: 5px;
-    color: whitesmoke;
+    color: black;
     border-bottom: 2px solid #ff4747;
 }
 
@@ -149,9 +149,9 @@ h1{
     max-width: 400px;
     min-height: 550px;
     border-radius: 30px;
-    background: #954141;
-    box-shadow:  -20px 20px 60px #7f3737, 
-             20px -20px 60px #ab4b4b;
+background: #f5f5f5;
+box-shadow:  -15px 15px 0px #d0d0d0,
+             0px -0px 0px #ffffff;
 }
 
 .leftcolumn2 .buttonscontainer{
@@ -164,7 +164,7 @@ h1{
     text-align: center;
     margin: 20px 0px;
     /* font-family: 'Staatliches', cursive; */
-    color: whitesmoke;
+    color: black;
     letter-spacing: 3px;
 }
 
@@ -175,7 +175,7 @@ h1{
 .leftcolumn2 p{
     padding: 0px 20px 20px 20px;
     /* font-family: 'Staatliches', cursive; */
-    color: whitesmoke;
+    color: black;
     word-spacing: 3px;
     text-align:center;
 }
@@ -192,21 +192,19 @@ h1{
     padding: 8px 60px;
     text-decoration: none;
     text-align: center;
-    color: whitesmoke;
+    color: black;
     font-size: 24px;
     width: 100%;
     height: 100%;
-    border: 2px whitesmoke solid;
+    border: 2px black solid;
 }
 
 .leftcolumn2 .buttonscontainer button a:hover{
     transition: ease-in-out 0.2s;
-    background: whitesmoke;
+    background: black;
     color: #ff4747;
-    border-bottom-color: #ff4747;
-    border-left-color: #ff4747;
-    border-bottom-width: 5px;
-    border-left-width: 5px;
+    border: #ff4747 2px solid;
+    
 }
 
 .leftcolumn2 img{
@@ -225,9 +223,9 @@ h1{
     max-width: 400px;
     min-height: 550px;
     border-radius: 30px;
-    background: #954141;
-    box-shadow:  20px 20px 60px #7f3737, 
-             -20px -20px 60px #ab4b4b;
+background: #f5f5f5;
+box-shadow:  15px 15px 0px #d0d0d0,
+             -0px -0px 0px #ffffff;
 }
 
 .rightcolumn2 .buttonscontainer{
@@ -240,7 +238,7 @@ h1{
     text-align: center;
     margin: 20px 0px;
     /* font-family: 'Staatliches', cursive; */
-    color: whitesmoke;
+    color: black;
     letter-spacing: 3px;
 }
 
@@ -251,7 +249,7 @@ h1{
 .rightcolumn2 p{
     padding: 0px 20px 20px 20px;
     /* font-family: 'Staatliches', cursive; */
-    color: whitesmoke;
+    color: black;
     word-spacing: 3px;
     text-align:center;
 }
@@ -268,21 +266,19 @@ h1{
     padding: 8px 60px;
     text-decoration: none;
     text-align: center;
-    color: whitesmoke;
+    color: black;
     font-size: 24px;
     width: 100%;
     height: 100%;
-    border: 2px whitesmoke solid;
+    border: 2px black solid;
 }
 
 .rightcolumn2 .buttonscontainer button a:hover{
     transition: ease-in-out 0.2s;
-    background: whitesmoke;
+    background: black;
     color: #ff4747;
-    border-bottom-color: #ff4747;
-    border-left-color: #ff4747;
-    border-bottom-width: 5px;
-    border-left-width: 5px;
+    border: #ff4747 2px solid;
+    
 }
 
 .rightcolumn2 img{
